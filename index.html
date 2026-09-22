@@ -4,124 +4,110 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
 <meta name="theme-color" content="#1e40af"/>
-<title>Transformation Master – Complete | All Rules + Massive Question Bank</title>
+<title>Transformation Master Pro</title>
 <style>
-:root{--p:#1e40af;--pd:#1e3a8a;--a:#3b82f6;--s:#10b981;--d:#ef4444;--bg:#f8fafc;--c:#fff;--t:#1e293b;--m:#64748b;--b:#e2e8f0;--r:12px}
+:root{--p:#1e40af;--pd:#1e3a8a;--a:#3b82f6;--s:#10b981;--d:#ef4444;--bg:#f1f5f9;--c:#fff;--t:#0f172a;--m:#64748b;--b:#e2e8f0;--r:14px}
 [data-theme=dark]{--bg:#0f172a;--c:#1e293b;--t:#f1f5f9;--m:#94a3b8;--b:#334155}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--t);line-height:1.55;min-height:100vh}
-.hdr{background:linear-gradient(135deg,var(--p),var(--pd));color:#fff;padding:.9rem 1.1rem;position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.15)}
-.hdr-row{display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap}
-.logo{font-weight:700;font-size:1.15rem;display:flex;align-items:center;gap:.4rem}
-.logo small{font-weight:400;opacity:.85;font-size:.78rem;display:block}
-.acts{display:flex;gap:.4rem;align-items:center}
+.hdr{background:linear-gradient(135deg,var(--p),var(--pd));color:#fff;padding:.85rem 1rem;position:sticky;top:0;z-index:60;box-shadow:0 4px 12px rgba(0,0,0,.18)}
+.hdr-row{display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap}
+.logo{font-weight:700;font-size:1.1rem}
+.logo small{display:block;font-weight:400;font-size:.72rem;opacity:.88}
+.acts{display:flex;gap:.35rem;align-items:center}
 .lang{display:flex;background:rgba(255,255,255,.15);border-radius:20px;overflow:hidden}
-.lang button{background:0;border:0;color:#fff;padding:.28rem .65rem;font-size:.78rem;cursor:pointer}
-.lang button.on{background:rgba(255,255,255,.3);font-weight:600}
+.lang button{background:0;border:0;color:#fff;padding:.26rem .6rem;font-size:.75rem;cursor:pointer}
+.lang button.on{background:rgba(255,255,255,.32);font-weight:600}
 .ib{background:rgba(255,255,255,.15);border:0;color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:1rem}
-.wrap{max-width:960px;margin:0 auto;padding:1rem 1rem 5rem}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1.1rem}
-.sc{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:.8rem;text-align:center}
-.sc .n{font-size:1.4rem;font-weight:700;color:var(--p)}
-.sc .l{font-size:.75rem;color:var(--m)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.7rem;margin-bottom:1.3rem}
-.dc{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:1rem .8rem;text-align:center;cursor:pointer;transition:.2s}
+.wrap{max-width:920px;margin:0 auto;padding:1rem 1rem 5.2rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;margin-bottom:1rem}
+.sc{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:.75rem;text-align:center}
+.sc .n{font-size:1.35rem;font-weight:700;color:var(--p)}
+.sc .l{font-size:.72rem;color:var(--m)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:.65rem;margin-bottom:1.1rem}
+.dc{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:1rem .7rem;text-align:center;cursor:pointer;transition:.18s}
 .dc:hover{transform:translateY(-2px);border-color:var(--a)}
-.dc .i{font-size:1.7rem;margin-bottom:.3rem}
-.dc h3{font-size:.9rem}
-.dc p{font-size:.72rem;color:var(--m);margin-top:.15rem}
-.st{font-size:1.1rem;font-weight:700;margin:1.2rem 0 .7rem}
-.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.9rem}
-.chip{padding:.3rem .75rem;border-radius:16px;border:1px solid var(--b);background:var(--c);font-size:.8rem;cursor:pointer}
+.dc .i{font-size:1.65rem;margin-bottom:.25rem}
+.dc h3{font-size:.88rem}
+.dc p{font-size:.7rem;color:var(--m);margin-top:.12rem}
+.st{font-size:1.08rem;font-weight:700;margin:1.1rem 0 .65rem}
+.chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.8rem}
+.chip{padding:.28rem .7rem;border-radius:16px;border:1px solid var(--b);background:var(--c);font-size:.78rem;cursor:pointer}
 .chip.on{background:var(--p);color:#fff;border-color:var(--p)}
-.box{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:1.2rem;margin-bottom:1rem}
-.qt{font-size:1.05rem;font-weight:500;margin-bottom:.35rem}
-.qb{font-size:.9rem;color:var(--m);margin-bottom:.7rem;font-family:'Noto Sans Bengali',sans-serif}
-.ins{background:#eff6ff;color:#1e40af;padding:.45rem .7rem;border-radius:8px;font-size:.85rem;margin-bottom:.8rem}
+.box{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:1.15rem;margin-bottom:.9rem}
+.qt{font-size:1.05rem;font-weight:550;margin-bottom:.35rem}
+.qb{font-size:.88rem;color:var(--m);margin-bottom:.65rem}
+.ins{background:#eff6ff;color:#1e40af;padding:.42rem .7rem;border-radius:8px;font-size:.84rem;margin-bottom:.75rem}
 [data-theme=dark] .ins{background:#1e3a8a;color:#bfdbfe}
-.ai{width:100%;padding:.7rem .9rem;border:2px solid var(--b);border-radius:8px;font-size:.95rem;background:var(--bg);color:var(--t);margin-bottom:.8rem}
+.options{display:flex;flex-direction:column;gap:.45rem;margin-bottom:.85rem}
+.opt{display:flex;align-items:flex-start;gap:.55rem;padding:.7rem .85rem;border:2px solid var(--b);border-radius:10px;cursor:pointer;transition:.15s;background:var(--bg);text-align:left;font-size:.92rem;width:100%}
+.opt:hover{border-color:var(--a)}
+.opt.sel{border-color:var(--p);background:#dbeafe}
+[data-theme=dark] .opt.sel{background:#1e3a8a}
+.opt.correct{border-color:var(--s)!important;background:#d1fae5!important}
+.opt.wrong{border-color:var(--d)!important;background:#fee2e2!important}
+.opt .letter{font-weight:700;color:var(--p);min-width:1.2rem}
+.ai{width:100%;padding:.65rem .85rem;border:2px solid var(--b);border-radius:8px;font-size:.92rem;background:var(--bg);color:var(--t);margin-bottom:.7rem;display:none}
 .ai:focus{outline:0;border-color:var(--a)}
-.btns{display:flex;flex-wrap:wrap;gap:.45rem}
-.btn{padding:.55rem 1.1rem;border:0;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer}
+.btns{display:flex;flex-wrap:wrap;gap:.4rem}
+.btn{padding:.52rem 1rem;border:0;border-radius:8px;font-size:.86rem;font-weight:600;cursor:pointer}
 .bp{background:var(--p);color:#fff}
 .bo{background:0;border:2px solid var(--b);color:var(--t)}
-.fb{margin-top:.8rem;padding:.85rem;border-radius:8px;display:none}
+.fb{margin-top:.75rem;padding:.8rem;border-radius:8px;display:none;font-size:.9rem}
 .fb.show{display:block}
 .fb.ok{background:#d1fae5;color:#065f46;border:1px solid #10b981}
 .fb.no{background:#fee2e2;color:#991b1b;border:1px solid #ef4444}
-[data-theme=dark] .fb.ok{background:#064e3b;color:#a7f3d0}
-[data-theme=dark] .fb.no{background:#7f1d1d;color:#fecaca}
 .view{display:none}
-.view.on{display:block;animation:fi .25s}
-@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.back{background:0;border:0;color:var(--p);font-weight:600;cursor:pointer;margin-bottom:.8rem;font-size:.9rem}
-.lc{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:.9rem 1rem;margin-bottom:.55rem;cursor:pointer}
-.lc:hover{border-color:var(--a)}
-.lc h4{font-size:.95rem}
-.lc .meta{font-size:.75rem;color:var(--m)}
-.rb{background:#f0f9ff;border-left:4px solid var(--a);padding:.85rem;margin:.8rem 0;border-radius:0 8px 8px 0}
+.view.on{display:block;animation:fi .22s ease}
+@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.back{background:0;border:0;color:var(--p);font-weight:600;cursor:pointer;margin-bottom:.7rem;font-size:.88rem}
+.lc{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:.8rem .95rem;margin-bottom:.5rem}
+.lc h4{font-size:.92rem}
+.lc .meta{font-size:.72rem;color:var(--m)}
+.rb{background:#f0f9ff;border-left:4px solid var(--a);padding:.8rem;margin:.7rem 0;border-radius:0 8px 8px 0;font-size:.9rem}
 [data-theme=dark] .rb{background:#0c4a6e}
-.ec{background:var(--bg);border:1px solid var(--b);border-radius:8px;padding:.8rem;margin:.55rem 0}
-.ec .lb{font-size:.7rem;font-weight:600;color:var(--m);text-transform:uppercase;margin-bottom:.2rem}
-.bnav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--c);border-top:1px solid var(--b);padding:.4rem 0;z-index:50}
+.ec{background:var(--bg);border:1px solid var(--b);border-radius:8px;padding:.7rem;margin:.45rem 0;font-size:.88rem}
+.ec .lb{font-size:.68rem;font-weight:700;color:var(--m);text-transform:uppercase}
+.bnav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--c);border-top:1px solid var(--b);padding:.35rem 0;z-index:60}
 .bnavi{display:flex;justify-content:space-around}
-.ni{display:flex;flex-direction:column;align-items:center;gap:.1rem;background:0;border:0;color:var(--m);font-size:.68rem;cursor:pointer;padding:.2rem}
+.ni{display:flex;flex-direction:column;align-items:center;gap:.08rem;background:0;border:0;color:var(--m);font-size:.65rem;cursor:pointer;padding:.18rem}
 .ni.on{color:var(--p);font-weight:600}
-.ni span{font-size:1.2rem}
-@media(max-width:640px){.bnav{display:block}.wrap{padding-bottom:4.5rem}.grid{grid-template-columns:repeat(2,1fr)}}
-.bn{font-family:'Noto Sans Bengali','Hind Siliguri',sans-serif}
-.pb{height:7px;background:var(--b);border-radius:4px;overflow:hidden;margin:.35rem 0}
+.ni span{font-size:1.15rem}
+@media(max-width:640px){.bnav{display:block}.wrap{padding-bottom:4.3rem}.grid{grid-template-columns:repeat(2,1fr)}}
+.bn{font-family:'Noto Sans Bengali',sans-serif}
+.pb{height:6px;background:var(--b);border-radius:4px;overflow:hidden;margin:.3rem 0}
 .pf{height:100%;background:var(--s);border-radius:4px}
-.rule-list{margin:.5rem 0 .5rem 1.1rem;font-size:.9rem}
-.rule-list li{margin:.25rem 0}
+.rule-list{margin:.4rem 0 .4rem 1rem;font-size:.86rem}
+.rule-list li{margin:.22rem 0}
+.detail{font-size:.85rem;color:var(--m);margin:.4rem 0;padding:.5rem;background:var(--bg);border-radius:8px}
+.mode-tog{display:flex;gap:.3rem;margin-bottom:.7rem}
+.mode-tog button{flex:1;padding:.4rem;border:2px solid var(--b);border-radius:8px;background:var(--c);cursor:pointer;font-size:.8rem;font-weight:600}
+.mode-tog button.on{border-color:var(--p);background:#dbeafe;color:var(--p)}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
-<header class="hdr">
-<div class="hdr-row">
-<div class="logo">🔄 Transformation Master<small>All Rules • Massive Bank • Bilingual</small></div>
-<div class="acts">
-<div class="lang">
-<button class="on" data-l="en">EN</button>
-<button data-l="bn">বাং</button>
-<button data-l="both">Both</button>
-</div>
-<button class="ib" id="thm">🌙</button>
-</div>
-</div>
-</header>
-
+<header class="hdr"><div class="hdr-row">
+<div class="logo">🔄 Transformation Master Pro<small>Detailed Rules • Clickable Answers • 150+ Questions</small></div>
+<div class="acts"><div class="lang"><button class="on" data-l="en">EN</button><button data-l="bn">বাং</button><button data-l="both">Both</button></div>
+<button class="ib" id="thm">🌙</button></div>
+</div></header>
 <main class="wrap">
-<!-- DASHBOARD -->
 <section id="v-home" class="view on">
-<div class="stats">
-<div class="sc"><div class="n" id="sA">0</div><div class="l">Attempted</div></div>
-<div class="sc"><div class="n" id="sC">0</div><div class="l">Correct</div></div>
-<div class="sc"><div class="n" id="sP">0%</div><div class="l">Accuracy</div></div>
-</div>
+<div class="stats"><div class="sc"><div class="n" id="sA">0</div><div class="l">Attempted</div></div><div class="sc"><div class="n" id="sC">0</div><div class="l">Correct</div></div><div class="sc"><div class="n" id="sP">0%</div><div class="l">Accuracy</div></div></div>
 <div class="grid">
-<div class="dc" data-v="rules"><div class="i">📘</div><h3>All Rules</h3><p>Every pattern</p></div>
-<div class="dc" data-v="practice"><div class="i">✍️</div><h3>Practice</h3><p>Transform now</p></div>
-<div class="dc" data-v="bank"><div class="i">📝</div><h3>Question Bank</h3><p>100+ items</p></div>
+<div class="dc" data-v="rules"><div class="i">📘</div><h3>All Rules</h3><p>Detailed patterns</p></div>
+<div class="dc" data-v="practice"><div class="i">✍️</div><h3>Practice</h3><p>Click or type</p></div>
+<div class="dc" data-v="bank"><div class="i">📝</div><h3>Question Bank</h3><p>150+ items</p></div>
 <div class="dc" data-v="quiz"><div class="i">🎯</div><h3>Quiz</h3><p>Timed sets</p></div>
 <div class="dc" data-v="progress"><div class="i">📊</div><h3>Progress</h3><p>Your stats</p></div>
 </div>
-<div class="st">📌 Topics</div>
-<div class="chips" id="topChips"></div>
+<div class="st">📌 Quick Topics</div><div class="chips" id="topChips"></div>
 </section>
-
-<!-- RULES -->
-<section id="v-rules" class="view">
-<button class="back" data-b="home">← Dashboard</button>
-<div class="st">📘 Complete Transformation Rules</div>
-<div id="rulesBox"></div>
-</section>
-
-<!-- PRACTICE -->
+<section id="v-rules" class="view"><button class="back" data-b="home">← Dashboard</button><div class="st">📘 Complete Transformation Rules</div><div id="rulesBox"></div></section>
 <section id="v-practice" class="view">
-<button class="back" data-b="home">← Dashboard</button>
-<div class="st">✍️ Practice</div>
+<button class="back" data-b="home">← Dashboard</button><div class="st">✍️ Practice</div>
+<div class="mode-tog"><button class="on" id="modeClick">👆 Clickable Options</button><button id="modeType">⌨️ Type Answer</button></div>
 <div class="chips" id="pFilters">
 <button class="chip on" data-f="all">All</button>
 <button class="chip" data-f="Degree of Comparison">Degree</button>
@@ -134,57 +120,18 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:v
 <button class="chip" data-f="Miscellaneous">Misc</button>
 </div>
 <div class="box">
-<div class="qt" id="qT">…</div>
-<div class="qb bn" id="qB"></div>
-<div class="ins" id="qI"></div>
-<input class="ai" id="ans" placeholder="Type your transformed sentence…" autocomplete="off"/>
-<div class="btns">
-<button class="btn bp" id="chk">Check</button>
-<button class="btn bo" id="hint">Hint</button>
-<button class="btn bo" id="next">Next →</button>
-<button class="btn bo" id="show">Show Answer</button>
-</div>
+<div style="font-size:.78rem;color:var(--m);margin-bottom:.4rem" id="qMeta"></div>
+<div class="qt" id="qT">…</div><div class="qb bn" id="qB"></div><div class="ins" id="qI"></div>
+<div class="options" id="opts"></div>
+<input class="ai" id="ans" placeholder="Or type your answer here…" autocomplete="off"/>
+<div class="btns"><button class="btn bp" id="chk">Check Answer</button><button class="btn bo" id="hint">Hint</button><button class="btn bo" id="next">Next →</button><button class="btn bo" id="show">Show Answer</button></div>
 <div class="fb" id="fb"></div>
 </div>
 </section>
-
-<!-- BANK -->
-<section id="v-bank" class="view">
-<button class="back" data-b="home">← Dashboard</button>
-<div class="st">📝 Full Question Bank</div>
-<div class="chips" id="bFilters"></div>
-<div id="bankList"></div>
-</section>
-
-<!-- QUIZ -->
-<section id="v-quiz" class="view">
-<button class="back" data-b="home">← Dashboard</button>
-<div class="st">🎯 Smart Quiz</div>
-<div class="box">
-<p style="color:var(--m);margin-bottom:.8rem">Select a set and start practising.</p>
-<div class="btns">
-<button class="btn bp" data-n="5">5 Qs</button>
-<button class="btn bp" data-n="10">10 Qs</button>
-<button class="btn bp" data-n="20">20 Qs</button>
-<button class="btn bp" data-n="50">50 Qs</button>
-</div>
-</div>
-</section>
-
-<!-- PROGRESS -->
-<section id="v-progress" class="view">
-<button class="back" data-b="home">← Dashboard</button>
-<div class="st">📊 Progress</div>
-<div class="stats">
-<div class="sc"><div class="n" id="pA">0</div><div class="l">Attempted</div></div>
-<div class="sc"><div class="n" id="pC">0</div><div class="l">Correct</div></div>
-<div class="sc"><div class="n" id="pP">0%</div><div class="l">Accuracy</div></div>
-</div>
-<div class="box"><div id="tStats"></div>
-<button class="btn bo" id="rst" style="margin-top:.8rem">Reset Progress</button></div>
-</section>
+<section id="v-bank" class="view"><button class="back" data-b="home">← Dashboard</button><div class="st">📝 Full Question Bank</div><div class="chips" id="bFilters"></div><div id="bankList"></div></section>
+<section id="v-quiz" class="view"><button class="back" data-b="home">← Dashboard</button><div class="st">🎯 Smart Quiz</div><div class="box"><p style="color:var(--m);margin-bottom:.8rem">Choose how many questions:</p><div class="btns"><button class="btn bp" data-n="5">5 Qs</button><button class="btn bp" data-n="10">10 Qs</button><button class="btn bp" data-n="20">20 Qs</button><button class="btn bp" data-n="50">50 Qs</button></div></div></section>
+<section id="v-progress" class="view"><button class="back" data-b="home">← Dashboard</button><div class="st">📊 Progress</div><div class="stats"><div class="sc"><div class="n" id="pA">0</div><div class="l">Attempted</div></div><div class="sc"><div class="n" id="pC">0</div><div class="l">Correct</div></div><div class="sc"><div class="n" id="pP">0%</div><div class="l">Accuracy</div></div></div><div class="box"><div id="tStats"></div><button class="btn bo" id="rst" style="margin-top:.7rem">Reset Progress</button></div></section>
 </main>
-
 <nav class="bnav"><div class="bnavi">
 <button class="ni on" data-v="home"><span>🏠</span>Home</button>
 <button class="ni" data-v="rules"><span>📘</span>Rules</button>
@@ -192,364 +139,29 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:v
 <button class="ni" data-v="bank"><span>📝</span>Bank</button>
 <button class="ni" data-v="progress"><span>📊</span>Stats</button>
 </div></nav>
-
 <script>
-/* ========== RULES (all major patterns from textbook) ========== */
-const RULES=[
-{id:"deg",title:"Interchange of Degrees of Comparison",titleBn:"তুলনার মাত্রার পরিবর্তন",
-rule:{en:"Change Positive ↔ Comparative ↔ Superlative without altering meaning.",bn:"অর্থ অপরিবর্তিত রেখে Positive, Comparative ও Superlative-এর মধ্যে পরিবর্তন।"},
-formulas:[
-"Positive → Comparative: as Adj as → not more/better Adj than",
-"Superlative → Comparative: the +est/most → Adj-er/more + than any other / all other",
-"Superlative → Positive: the +est → No other … so Adj as  /  Very few … so Adj as (for 'one of the')"
-],
-examples:[
-{o:"He is as good as his brother.",t:"His brother is not better than he."},
-{o:"He is the best boy in the class.",t:"He is better than any other boy in the class. / No other boy in the class is so good as he."},
-{o:"Gold is one of the most precious metals.",t:"Gold is more precious than most other metals. / Very few metals are so precious as gold."},
-{o:"The cow is the most useful of all animals.",t:"The cow is more useful than any other animal. / No other animal is so useful as the cow."}
-]},
-{id:"affneg",title:"Affirmative ↔ Negative",titleBn:"হ্যাঁবাচক ↔ নাবাচক",
-rule:{en:"Use opposite words, double negatives, too…to, none but, no sooner…than, cannot but, etc. without changing meaning.",bn:"বিপরীত শব্দ, দ্বৈত নেগেটিভ, too…to, none but, no sooner…than ইত্যাদি ব্যবহার করে অর্থ অপরিবর্তিত রেখে রূপান্তর।"},
-formulas:[
-"Only / Alone → None but",
-"Too + Adj + to-inf → So + Adj + that … cannot",
-"As soon as → No sooner + aux + S + V + than",
-"Must → Cannot but / Have no option but to",
-"Always → Never + opposite verb",
-"Everybody / All → Nobody … not / There is none who does not",
-"Double negative: tried all → left no … untried"
-],
-examples:[
-{o:"Only students are allowed.",t:"None but the students are allowed."},
-{o:"He is too weak to walk.",t:"He is so weak that he cannot walk."},
-{o:"As soon as he saw me he began to weep.",t:"No sooner did he see me than he began to weep."},
-{o:"I shall always remember you.",t:"I shall never forget you."},
-{o:"Everybody will admit it.",t:"Nobody will deny it."},
-{o:"He tried all plans.",t:"He left no plan untried."},
-{o:"He must yield to necessity.",t:"He cannot but yield to necessity."}
-]},
-{id:"excl",title:"Assertive ↔ Exclamatory",titleBn:"বিবৃতিমূলক ↔ বিস্ময়সূচক",
-rule:{en:"Express strong feeling with What a / How / Oh that / Had I but / Alas etc.",bn:"What a / How / Oh that / Had I but ইত্যাদি দিয়ে আবেগ প্রকাশ।"},
-formulas:[
-"Very + Adj → How Adj … ! / What a Adj + N … !",
-"I wish + past → Oh that / Had I but + past",
-"It was a great N → What a great N it was!"
-],
-examples:[
-{o:"The picture is very beautiful.",t:"How beautiful the picture is!"},
-{o:"I wish I had a friend to support me.",t:"Had I but a friend to support me! / Oh, that I had a friend to support me!"},
-{o:"It was a grand victory.",t:"What a grand victory it was!"},
-{o:"He runs very fast.",t:"How fast he runs!"}
-]},
-{id:"inter",title:"Assertive ↔ Interrogative",titleBn:"বিবৃতিমূলক ↔ প্রশ্নবোধক",
-rule:{en:"Rhetorical questions: affirmative question implies negative answer and vice-versa.",bn:"হাঁ-জ্ঞাপক প্রশ্নের না-জ্ঞাপক উত্তর এবং না-জ্ঞাপক প্রশ্নের হাঁ-জ্ঞাপক উত্তর বোঝায়।"},
-formulas:[
-"Everybody / All → Who does not … ?",
-"I shall never → Shall I ever … ?",
-"No one can → Can anyone … ?",
-"It is no use → What is the use of … ?"
-],
-examples:[
-{o:"Everybody wishes to be happy.",t:"Who does not wish to be happy?"},
-{o:"I shall never forget you.",t:"Shall I ever forget you? / Can I ever forget you?"},
-{o:"No one can do this.",t:"Can anyone do this?"},
-{o:"It is useless to go there now.",t:"What is the use of going there now?"}
-]},
-{id:"sc",title:"Simple ↔ Complex ↔ Compound",titleBn:"সরল ↔ জটিল ↔ যৌগিক",
-rule:{en:"Expand phrases to clauses (Simple→Complex); reduce clauses to phrases (Complex→Simple); use coordinating conjunctions for Compound.",bn:"Phrase-কে Clause করে Complex; Clause-কে Phrase করে Simple; Coordinating conjunction দিয়ে Compound।"},
-formulas:[
-"Simple → Complex (Noun): I know his name → I know what his name is",
-"Simple → Complex (Adj): He is a rich man → He is a man who is rich",
-"Simple → Complex (Adv): too weak to walk → so weak that he cannot walk",
-"In spite of + N → Though + clause  (Complex)  /  poor, yet/but … (Compound)",
-"As soon as → When / As soon as clause  or  No sooner … than"
-],
-examples:[
-{o:"I know his name.",t:"I know what his name is. (Complex)"},
-{o:"He is too weak to walk.",t:"He is so weak that he cannot walk. (Complex)"},
-{o:"In spite of his poverty he is happy.",t:"Though he is poor, he is happy. (Complex) / He is poor, yet he is happy. (Compound)"},
-{o:"Being ill, he could not attend school.",t:"As he was ill, he could not attend school."}
-]},
-{id:"pos",title:"Interchange of Parts of Speech",titleBn:"পদ পরিবর্তন",
-rule:{en:"Replace a word of one part of speech by an equivalent word of another part of speech without changing meaning.",bn:"এক পদের শব্দকে অন্য পদের সমার্থক শব্দ দিয়ে প্রতিস্থাপন, অর্থ অপরিবর্তিত রেখে।"},
-formulas:[
-"Adverb → Noun: acted prudently → acted with prudence",
-"Adjective → Adverb: with scorn → scornfully",
-"Noun → Verb: gave a prompt answer → answered promptly",
-"Adjective → Noun: he is strong → he has strength"
-],
-examples:[
-{o:"He acted prudently.",t:"He acted with prudence."},
-{o:"He treated me with scorn.",t:"He treated me scornfully."},
-{o:"He gave a prompt answer.",t:"He answered promptly."}
-]},
-{id:"misc",title:"Miscellaneous Patterns",titleBn:"বিবিধ রূপান্তর",
-rule:{en:"Common fixed patterns frequently asked in board exams.",bn:"বোর্ড পরীক্ষায় প্রায়শই আসা নির্দিষ্ট প্যাটার্ন।"},
-formulas:[
-"Unless → If … not",
-"In spite of / Despite → Though / Although",
-"Because of → Because + clause",
-"It is time → It is time + past subjunctive",
-"Would rather … than",
-"Not only … but also",
-"The more … the more"
-],
-examples:[
-{o:"Unless you work hard you cannot succeed.",t:"If you do not work hard you cannot succeed."},
-{o:"In spite of his illness he came.",t:"Though he was ill, he came."},
-{o:"He not only caned the boy but also fined him.",t:"Besides caning the boy he also fined him. (Simple)"}
-]}
-];
+const RULES=[{"id": "deg", "title": "1. Degrees of Comparison", "titleBn": "১. তুলনার মাত্রা", "rule": {"en": "Change Positive ↔ Comparative ↔ Superlative without changing meaning.", "bn": "অর্থ একই রেখে Positive, Comparative, Superlative বদলান।"}, "detail": {"en": "Use 'any other/all other' for Superlative→Comparative. For 'one of the' use 'most other' and 'Very few…so…as'.", "bn": "Superlative→Comparative-এ 'any other' ব্যবহার করুন। 'one of the'-এর জন্য 'most other' ও 'Very few'।"}, "formulas": ["as Adj as → not more/better Adj than", "the +est → Adj-er than any other", "the +est → No other … so Adj as", "one of the +est → more than most other / Very few … so … as"], "examples": [{"o": "He is as good as his brother.", "t": "His brother is not better than he."}, {"o": "He is the best boy in the class.", "t": "He is better than any other boy in the class."}, {"o": "Gold is one of the most precious metals.", "t": "Very few metals are so precious as gold."}]}, {"id": "affneg", "title": "2. Affirmative ↔ Negative", "titleBn": "২. হ্যাঁবাচক ↔ নাবাচক", "rule": {"en": "Use opposite words, double negatives, fixed structures without changing meaning.", "bn": "বিপরীত শব্দ, দ্বৈত নেগেটিভ, নির্দিষ্ট গঠন ব্যবহার করুন।"}, "detail": {"en": "Only→None but | Too…to→So…that…cannot | As soon as→No sooner…than | Must→Cannot but | Always→Never+opposite | Everybody→Nobody…not", "bn": "Only→None but | Too…to→So…that…cannot | As soon as→No sooner…than | Must→Cannot but"}, "formulas": ["Only/Alone → None but", "Too+Adj+to → So+Adj+that+cannot", "As soon as → No sooner+did/had+S+V+than", "Must → Cannot but", "Always V → Never + opposite", "Tried all → Left no … untried"], "examples": [{"o": "Only students are allowed.", "t": "None but the students are allowed."}, {"o": "He is too weak to walk.", "t": "He is so weak that he cannot walk."}, {"o": "As soon as he saw me he wept.", "t": "No sooner did he see me than he wept."}, {"o": "I shall always remember you.", "t": "I shall never forget you."}]}, {"id": "excl", "title": "3. Assertive ↔ Exclamatory", "titleBn": "৩. বিবৃতিমূলক ↔ বিস্ময়সূচক", "rule": {"en": "Use What a / How / Oh that / Had I but for strong feeling.", "bn": "What a / How / Oh that / Had I but ব্যবহার করুন।"}, "detail": {"en": "'Very+adj' → 'How+adj' or 'What a+adj+noun'. Wishes → 'Oh that' or 'Had I but'.", "bn": "'Very+adj' → How বা What a। ইচ্ছা → Oh that বা Had I but।"}, "formulas": ["It is very Adj → How Adj it is!", "I wish + past → Oh that / Had I but + past", "It was a great N → What a great N it was!"], "examples": [{"o": "The picture is very beautiful.", "t": "How beautiful the picture is!"}, {"o": "I wish I had a friend.", "t": "Had I but a friend!"}, {"o": "It was a grand victory.", "t": "What a grand victory it was!"}]}, {"id": "inter", "title": "4. Assertive ↔ Interrogative", "titleBn": "৪. বিবৃতিমূলক ↔ প্রশ্নবোধক", "rule": {"en": "Rhetorical: affirmative question implies negative answer and vice-versa.", "bn": "হাঁ-জ্ঞাপক প্রশ্নের না-জ্ঞাপক উত্তর বোঝায়।"}, "detail": {"en": "Not real questions; they assert something strongly.", "bn": "আসল প্রশ্ন নয়; জোরালো দাবি।"}, "formulas": ["Everybody V → Who does not V?", "I shall never V → Shall I ever V?", "No one can V → Can anyone V?", "It is useless → What is the use of…?"], "examples": [{"o": "Everybody wishes to be happy.", "t": "Who does not wish to be happy?"}, {"o": "I shall never forget you.", "t": "Shall I ever forget you?"}, {"o": "No one can do this.", "t": "Can anyone do this?"}]}, {"id": "sc", "title": "5. Simple ↔ Complex ↔ Compound", "titleBn": "৫. সরল ↔ জটিল ↔ যৌগিক", "rule": {"en": "Expand phrases to clauses (Simple→Complex). Reduce clauses to phrases (Complex→Simple). Coordinating conjunctions for Compound.", "bn": "Phrase→Clause = Complex; Clause→Phrase = Simple; Coordinating = Compound।"}, "detail": {"en": "Noun clause=what; Adjective clause=describes noun; Adverb clause=time/reason/condition/concession/result.", "bn": "Noun=কী; Adjective=বিশেষ্যের বিবরণ; Adverb=সময়/কারণ/শর্ত।"}, "formulas": ["I know his name → I know what his name is", "too weak to walk → so weak that he cannot walk", "In spite of poverty → Though he is poor / poor, yet…", "Having done → and then"], "examples": [{"o": "I know his name.", "t": "I know what his name is."}, {"o": "He is too weak to walk.", "t": "He is so weak that he cannot walk."}, {"o": "In spite of his poverty he is happy.", "t": "Though he is poor, he is happy. / He is poor, yet he is happy."}]}, {"id": "pos", "title": "6. Parts of Speech", "titleBn": "৬. পদ পরিবর্তন", "rule": {"en": "Replace one part of speech by an equivalent of another without changing meaning.", "bn": "এক পদকে অন্য পদের সমার্থক দিয়ে বদলান।"}, "detail": {"en": "Adverb↔Noun (with+noun), Adj↔Adverb (-ly), Noun↔Verb.", "bn": "Adverb↔Noun, Adj↔Adverb, Noun↔Verb।"}, "formulas": ["acted prudently → acted with prudence", "with scorn → scornfully", "gave a prompt answer → answered promptly", "he is strong → he has strength"], "examples": [{"o": "He acted prudently.", "t": "He acted with prudence."}, {"o": "He treated me with scorn.", "t": "He treated me scornfully."}, {"o": "He is strong enough to do it.", "t": "He has the strength to do it."}]}, {"id": "misc", "title": "7. Miscellaneous Patterns", "titleBn": "৭. বিবিধ প্যাটার্ন", "rule": {"en": "Fixed patterns frequent in board exams.", "bn": "বোর্ড পরীক্ষায় প্রায়ই আসা প্যাটার্ন।"}, "detail": {"en": "Unless↔If not, In spite of↔Though, too↔so that, Voice, one-word substitution.", "bn": "Unless↔If not, In spite of↔Though, too↔so that।"}, "formulas": ["Unless → If … not", "In spite of → Though", "so…that…no → too…to", "present everywhere → omnipresent"], "examples": [{"o": "Unless you work hard you cannot succeed.", "t": "If you do not work hard you cannot succeed."}, {"o": "The fact is so evident that it requires no proof.", "t": "The fact is too evident to require any proof."}, {"o": "God is present everywhere.", "t": "God is omnipresent."}]}];
+const Q=[{"topic": "Degree of Comparison", "q": {"en": "He is as good as his brother.", "bn": "সে তার ভাইয়ের মতোই ভালো।"}, "ins": {"en": "Change into Comparative.", "bn": "Comparative-এ পরিবর্তন করো।"}, "ans": ["His brother is not better than he.", "His brother is not better than him."], "opts": ["His brother is not better than he.", "His brother is better than he.", "He is better than his brother.", "He is the best of the two."], "exp": {"en": "as…as → not better than", "bn": "as…as কে not better than করা হয়।"}}, {"topic": "Degree of Comparison", "q": {"en": "The cow is the most useful of all animals.", "bn": "গরু সব প্রাণীর মধ্যে সবচেয়ে উপকারী।"}, "ins": {"en": "Change into Comparative.", "bn": "Comparative-এ পরিবর্তন করো।"}, "ans": ["The cow is more useful than any other animal."], "opts": ["The cow is more useful than any other animal.", "The cow is more useful than all animals.", "The cow is useful than other animals.", "No animal is useful as the cow."], "exp": {"en": "the most → more than any other", "bn": "Superlative → Comparative with any other।"}}, {"topic": "Degree of Comparison", "q": {"en": "He is better than any other boy in the class.", "bn": "সে ক্লাসের অন্য যেকোনো ছেলের চেয়ে ভালো।"}, "ins": {"en": "Change into Superlative.", "bn": "Superlative-এ পরিবর্তন করো।"}, "ans": ["He is the best boy in the class."], "opts": ["He is the best boy in the class.", "He is a best boy in the class.", "He is better boy in the class.", "No boy is best as he."], "exp": {"en": "better than any other → the best", "bn": "Comparative → Superlative।"}}, {"topic": "Degree of Comparison", "q": {"en": "No other place is so charming as this.", "bn": "এর মতো এত চমৎকার আর কোনো জায়গা নেই।"}, "ins": {"en": "Change into Superlative.", "bn": "Superlative-এ পরিবর্তন করো।"}, "ans": ["This is the most charming of all places.", "This is the most charming place."], "opts": ["This is the most charming of all places.", "This is more charming place.", "This is a charming place.", "This place is so charming."], "exp": {"en": "No other … so … as → the most", "bn": "Positive → Superlative।"}}, {"topic": "Degree of Comparison", "q": {"en": "Akbar was one of the greatest kings of India.", "bn": "আকবর ভারতের অন্যতম শ্রেষ্ঠ রাজা।"}, "ins": {"en": "Change into Positive.", "bn": "Positive-এ পরিবর্তন করো।"}, "ans": ["Very few kings of India were so great as Akbar."], "opts": ["Very few kings of India were so great as Akbar.", "No king of India was great as Akbar.", "Akbar was greater than all kings.", "Few kings were greater as Akbar."], "exp": {"en": "one of the greatest → Very few … so … as", "bn": "'one of the' প্যাটার্ন।"}}, {"topic": "Degree of Comparison", "q": {"en": "Health is more valuable than wealth.", "bn": "স্বাস্থ্য সম্পদের চেয়ে বেশি মূল্যবান।"}, "ins": {"en": "Change into Positive.", "bn": "Positive-এ পরিবর্তন করো।"}, "ans": ["Wealth is not so valuable as health."], "opts": ["Wealth is not so valuable as health.", "Health is valuable as wealth.", "Wealth is more valuable.", "Health is not valuable than wealth."], "exp": {"en": "more … than → not so … as", "bn": "Comparative → Positive।"}}, {"topic": "Degree of Comparison", "q": {"en": "Australia is the largest island in the world.", "bn": "অস্ট্রেলিয়া বিশ্বের বৃহত্তম দ্বীপ।"}, "ins": {"en": "Change into Comparative.", "bn": "Comparative-এ পরিবর্তন করো।"}, "ans": ["Australia is larger than any other island in the world."], "opts": ["Australia is larger than any other island in the world.", "Australia is larger than all islands.", "Australia is a large island.", "No island is large as Australia."], "exp": {"en": "the largest → larger than any other", "bn": "Superlative → Comparative।"}}, {"topic": "Degree of Comparison", "q": {"en": "She is as clever as you.", "bn": "সে তোমার মতোই চতুর।"}, "ins": {"en": "Change into Comparative.", "bn": "Comparative-এ পরিবর্তন করো।"}, "ans": ["You are not cleverer than she.", "You are not cleverer than her."], "opts": ["You are not cleverer than she.", "She is cleverer than you.", "You are cleverer.", "She is the cleverest."], "exp": {"en": "as … as → not cleverer than", "bn": "as…as প্যাটার্ন।"}}, {"topic": "Degree of Comparison", "q": {"en": "Iron is the most useful of all metals.", "bn": "লোহা সব ধাতুর মধ্যে সবচেয়ে উপকারী।"}, "ins": {"en": "Change into Positive.", "bn": "Positive-এ পরিবর্তন করো।"}, "ans": ["No other metal is so useful as iron."], "opts": ["No other metal is so useful as iron.", "Iron is useful metal.", "All metals are useful as iron.", "Iron is more useful."], "exp": {"en": "the most → No other … so … as", "bn": "Superlative → Positive।"}}, {"topic": "Degree of Comparison", "q": {"en": "This train runs faster than any other train.", "bn": "এই ট্রেন অন্য যেকোনো ট্রেনের চেয়ে দ্রুত।"}, "ins": {"en": "Change into Superlative.", "bn": "Superlative-এ পরিবর্তন করো।"}, "ans": ["This is the fastest train."], "opts": ["This is the fastest train.", "This train is faster.", "This is a fast train.", "No train runs fast as this."], "exp": {"en": "faster than any other → the fastest", "bn": "Comparative → Superlative।"}}, {"topic": "Degree of Comparison", "q": {"en": "Very few countries are so rich as this.", "bn": "এর মতো এত ধনী দেশ খুব কমই আছে।"}, "ins": {"en": "Change into Superlative.", "bn": "Superlative-এ পরিবর্তন করো।"}, "ans": ["This is one of the richest countries."], "opts": ["This is one of the richest countries.", "This is the richest country.", "This is richer country.", "Few countries are rich."], "exp": {"en": "Very few … so … as → one of the +est", "bn": "Very few প্যাটার্ন।"}}, {"topic": "Degree of Comparison", "q": {"en": "Mount Everest is the highest peak in the world.", "bn": "এভারেস্ট বিশ্বের সর্বোচ্চ শৃঙ্গ।"}, "ins": {"en": "Change into Negative Positive.", "bn": "Negative Positive-এ পরিবর্তন করো।"}, "ans": ["No other peak in the world is so high as Mount Everest."], "opts": ["No other peak in the world is so high as Mount Everest.", "Mount Everest is high.", "All peaks are high.", "Everest is higher peak."], "exp": {"en": "the highest → No other … so high as", "bn": "Superlative → Negative Positive।"}}, {"topic": "Degree of Comparison", "q": {"en": "Ram is the best student of his class.", "bn": "রাম তার ক্লাসের সেরা ছাত্র।"}, "ins": {"en": "Change into Comparative.", "bn": "Comparative-এ পরিবর্তন করো।"}, "ans": ["Ram is better than any other student in his class."], "opts": ["Ram is better than any other student in his class.", "Ram is better than all students.", "Ram is a good student.", "No student is best."], "exp": {"en": "the best → better than any other", "bn": "Superlative → Comparative।"}}, {"topic": "Degree of Comparison", "q": {"en": "He cannot run so fast as I.", "bn": "সে আমার মতো দ্রুত দৌড়াতে পারে না।"}, "ins": {"en": "Change into Comparative.", "bn": "Comparative-এ পরিবর্তন করো।"}, "ans": ["I can run faster than he.", "I can run faster than him."], "opts": ["I can run faster than he.", "He can run faster than I.", "I run fast.", "He runs faster."], "exp": {"en": "cannot so … as → can faster than", "bn": "Negative Positive → Comparative।"}}, {"topic": "Degree of Comparison", "q": {"en": "No other reptile is so vile as the cobra.", "bn": "কোবরার মতো এত জঘন্য আর কোনো সরীসৃপ নেই।"}, "ins": {"en": "Use Superlative.", "bn": "Superlative ব্যবহার করো।"}, "ans": ["The cobra is the vilest of all reptiles."], "opts": ["The cobra is the vilest of all reptiles.", "The cobra is more vile.", "The cobra is a vile reptile.", "All reptiles are vile."], "exp": {"en": "No other … so … as → the +est", "bn": "Positive → Superlative।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "Only students are allowed to enter the hall.", "bn": "শুধু ছাত্রদের হলে প্রবেশের অনুমতি।"}, "ins": {"en": "Use None but.", "bn": "None but ব্যবহার করো।"}, "ans": ["None but the students are allowed to enter the hall."], "opts": ["None but the students are allowed to enter the hall.", "No students are allowed.", "Students are not allowed.", "Only none are allowed."], "exp": {"en": "Only → None but", "bn": "Only প্যাটার্ন।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "He is too weak to walk.", "bn": "সে হাঁটার পক্ষে খুব দুর্বল।"}, "ins": {"en": "Use so…that.", "bn": "so…that ব্যবহার করো।"}, "ans": ["He is so weak that he cannot walk."], "opts": ["He is so weak that he cannot walk.", "He is weak that he can walk.", "He is too weak that he walks.", "He is so weak to walk."], "exp": {"en": "too…to → so…that…cannot", "bn": "too…to প্যাটার্ন।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "As soon as he saw me he began to weep.", "bn": "আমাকে দেখামাত্রই সে কাঁদতে শুরু করল।"}, "ins": {"en": "Use No sooner…than.", "bn": "No sooner…than ব্যবহার করো।"}, "ans": ["No sooner did he see me than he began to weep."], "opts": ["No sooner did he see me than he began to weep.", "As soon as he did see me he wept.", "No sooner he saw me he wept.", "He saw me no sooner."], "exp": {"en": "As soon as → No sooner + aux + S + V + than", "bn": "As soon as প্যাটার্ন।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "I shall always remember you.", "bn": "আমি তোমাকে সবসময় মনে রাখব।"}, "ins": {"en": "Change into Negative.", "bn": "Negative-এ পরিবর্তন করো।"}, "ans": ["I shall never forget you."], "opts": ["I shall never forget you.", "I shall not remember you.", "I always forget you.", "I shall remember never."], "exp": {"en": "always remember → never forget", "bn": "always → never + opposite।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "Everybody will admit it.", "bn": "সবাই এটা স্বীকার করবে।"}, "ins": {"en": "Change into Negative.", "bn": "Negative-এ পরিবর্তন করো।"}, "ans": ["Nobody will deny it."], "opts": ["Nobody will deny it.", "Everybody will deny it.", "Nobody will admit it.", "All will not admit."], "exp": {"en": "Everybody admit → Nobody deny", "bn": "Everybody প্যাটার্ন।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "He tried all plans.", "bn": "সে সব পরিকল্পনা চেষ্টা করেছিল।"}, "ins": {"en": "Change into Negative.", "bn": "Negative-এ পরিবর্তন করো।"}, "ans": ["He left no plan untried."], "opts": ["He left no plan untried.", "He tried no plans.", "He left all plans.", "He did not try plans."], "exp": {"en": "tried all → left no … untried", "bn": "Double negative।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "He must obey you.", "bn": "তাকে তোমার আনুগত্য করতেই হবে।"}, "ins": {"en": "Change into Negative.", "bn": "Negative-এ পরিবর্তন করো।"}, "ans": ["He cannot but obey you."], "opts": ["He cannot but obey you.", "He must not obey you.", "He can obey you.", "He does not obey."], "exp": {"en": "must → cannot but", "bn": "must প্যাটার্ন।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "You alone can do this.", "bn": "শুধু তুমিই এটা করতে পারো।"}, "ins": {"en": "Use None but.", "bn": "None but ব্যবহার করো।"}, "ans": ["None but you can do this."], "opts": ["None but you can do this.", "You cannot do this.", "None can do this.", "Only none can do."], "exp": {"en": "Alone → None but", "bn": "Alone/Only প্যাটার্ন।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "I am not an unreasonable man.", "bn": "আমি অযৌক্তিক মানুষ নই।"}, "ins": {"en": "Change into Affirmative.", "bn": "Affirmative-এ পরিবর্তন করো।"}, "ans": ["I am a reasonable man."], "opts": ["I am a reasonable man.", "I am an unreasonable man.", "I am not reasonable.", "I am man."], "exp": {"en": "not + unreasonable → reasonable", "bn": "বিপরীত শব্দ।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "None but the brave deserve the fair.", "bn": "শুধু সাহসীরাই সুন্দরীদের প্রাপ্য।"}, "ins": {"en": "Change into Affirmative.", "bn": "Affirmative-এ পরিবর্তন করো।"}, "ans": ["Only the brave deserve the fair."], "opts": ["Only the brave deserve the fair.", "None deserve the fair.", "The brave do not deserve.", "All deserve the fair."], "exp": {"en": "None but → Only", "bn": "None but প্যাটার্ন।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "The boy is too lazy to be successful.", "bn": "ছেলেটি এত অলস যে সফল হতে পারে না।"}, "ins": {"en": "Use so…that.", "bn": "so…that ব্যবহার করো।"}, "ans": ["The boy is so lazy that he cannot be successful."], "opts": ["The boy is so lazy that he cannot be successful.", "The boy is lazy to be successful.", "The boy is too lazy that he is successful.", "The boy is so lazy to succeed."], "exp": {"en": "too…to → so…that…cannot", "bn": "too…to।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "I shall not forget you.", "bn": "আমি তোমাকে ভুলব না।"}, "ins": {"en": "Change into Affirmative.", "bn": "Affirmative-এ পরিবর্তন করো।"}, "ans": ["I shall always remember you."], "opts": ["I shall always remember you.", "I shall forget you.", "I never remember you.", "I shall not remember."], "exp": {"en": "not forget → always remember", "bn": "not forget = always remember।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "All were present in the meeting.", "bn": "সভায় সবাই উপস্থিত ছিল।"}, "ins": {"en": "Change into Negative.", "bn": "Negative-এ পরিবর্তন করো।"}, "ans": ["No one was absent from the meeting."], "opts": ["No one was absent from the meeting.", "All were absent.", "No one was present.", "Some were absent."], "exp": {"en": "All present → No one absent", "bn": "All → No one + opposite।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "He left no plan untried.", "bn": "সে কোনো পরিকল্পনা চেষ্টা না করে ছাড়েনি।"}, "ins": {"en": "Change into Affirmative.", "bn": "Affirmative-এ পরিবর্তন করো।"}, "ans": ["He tried all plans."], "opts": ["He tried all plans.", "He left all plans.", "He tried no plans.", "He did not try."], "exp": {"en": "left no … untried → tried all", "bn": "Double negative → Affirmative।"}}, {"topic": "Affirmative ↔ Negative", "q": {"en": "Everybody likes her.", "bn": "সবাই তাকে পছন্দ করে।"}, "ins": {"en": "Change into Negative.", "bn": "Negative-এ পরিবর্তন করো।"}, "ans": ["Nobody dislikes her."], "opts": ["Nobody dislikes her.", "Everybody dislikes her.", "Nobody likes her.", "She is disliked."], "exp": {"en": "Everybody like → Nobody dislike", "bn": "Everybody।"}}, {"topic": "Exclamatory ↔ Assertive", "q": {"en": "Oh, that I were there at the time!", "bn": "হায়, সে সময়ে যদি আমি সেখানে থাকতাম!"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["I wish I were there at the time."], "opts": ["I wish I were there at the time.", "I was there at the time.", "I am there at the time.", "I will be there."], "exp": {"en": "Oh that → I wish", "bn": "Wish প্যাটার্ন।"}}, {"topic": "Exclamatory ↔ Assertive", "q": {"en": "What a sight it was!", "bn": "কী দৃশ্য ছিল তা!"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["It was a wonderful sight.", "It was a remarkable sight."], "opts": ["It was a wonderful sight.", "What sight was it?", "It was sight.", "The sight was what."], "exp": {"en": "What a → It was a + adj", "bn": "What a প্যাটার্ন।"}}, {"topic": "Exclamatory ↔ Assertive", "q": {"en": "How angry you are!", "bn": "তুমি কত রাগী!"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["You are very angry."], "opts": ["You are very angry.", "How are you angry?", "You are angry how.", "You angry are."], "exp": {"en": "How + adj → very + adj", "bn": "How প্যাটার্ন।"}}, {"topic": "Exclamatory ↔ Assertive", "q": {"en": "I wish I had a good house.", "bn": "আমি ইচ্ছা করি আমার একটি ভালো বাড়ি থাকত।"}, "ins": {"en": "Change into Exclamatory.", "bn": "Exclamatory-এ পরিবর্তন করো।"}, "ans": ["Oh, that I had a good house!", "Had I but a good house!"], "opts": ["Oh, that I had a good house!", "I have a good house.", "I wish house.", "Had I a house good."], "exp": {"en": "I wish → Oh that / Had I but", "bn": "Wish → Exclamatory।"}}, {"topic": "Exclamatory ↔ Assertive", "q": {"en": "It was a grand victory.", "bn": "এটি একটি জমকালো বিজয় ছিল।"}, "ins": {"en": "Change into Exclamatory.", "bn": "Exclamatory-এ পরিবর্তন করো।"}, "ans": ["What a grand victory it was!"], "opts": ["What a grand victory it was!", "It was victory.", "Grand was the victory.", "What victory was grand?"], "exp": {"en": "It was a + adj + N → What a + adj + N", "bn": "What a।"}}, {"topic": "Exclamatory ↔ Assertive", "q": {"en": "How beautiful the picture is!", "bn": "ছবিটি কত সুন্দর!"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["The picture is very beautiful."], "opts": ["The picture is very beautiful.", "How is the picture?", "The picture is beautiful how.", "Beautiful is the picture."], "exp": {"en": "How + adj → very + adj", "bn": "How।"}}, {"topic": "Exclamatory ↔ Assertive", "q": {"en": "What a clever piece of work it was!", "bn": "কী চতুর কাজ ছিল তা!"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["It was a very clever piece of work."], "opts": ["It was a very clever piece of work.", "What work was clever?", "It was clever work.", "The work was what."], "exp": {"en": "What a → It was a very", "bn": "What a।"}}, {"topic": "Exclamatory ↔ Assertive", "q": {"en": "He leads a most unhappy life.", "bn": "সে অত্যন্ত দুঃখজনক জীবন যাপন করে।"}, "ins": {"en": "Change into Exclamatory.", "bn": "Exclamatory-এ পরিবর্তন করো।"}, "ans": ["What an unhappy life he leads!"], "opts": ["What an unhappy life he leads!", "He leads life.", "Unhappy is his life.", "What life he leads?"], "exp": {"en": "most unhappy → What an unhappy", "bn": "What a।"}}, {"topic": "Interrogative ↔ Assertive", "q": {"en": "Who does not wish to be happy?", "bn": "কে সুখী হতে চায় না?"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["Everybody wishes to be happy."], "opts": ["Everybody wishes to be happy.", "Nobody wishes to be happy.", "Who wishes happy?", "Some wish to be happy."], "exp": {"en": "Who does not → Everybody", "bn": "Rhetorical।"}}, {"topic": "Interrogative ↔ Assertive", "q": {"en": "Shall I ever forget a friend like you?", "bn": "তোমার মতো বন্ধুকে কি আমি কখনো ভুলব?"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["I shall never forget a friend like you."], "opts": ["I shall never forget a friend like you.", "I shall forget you.", "Shall I forget?", "I ever forget friends."], "exp": {"en": "Shall I ever → I shall never", "bn": "Rhetorical।"}}, {"topic": "Interrogative ↔ Assertive", "q": {"en": "Can anybody have faith in such a liar?", "bn": "এমন মিথ্যাবাদীর উপর কে বিশ্বাস করতে পারে?"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["Nobody can have faith in such a liar."], "opts": ["Nobody can have faith in such a liar.", "Everybody can have faith.", "Somebody has faith.", "Can anybody faith?"], "exp": {"en": "Can anybody → Nobody can", "bn": "Rhetorical।"}}, {"topic": "Interrogative ↔ Assertive", "q": {"en": "Nobody trusts a liar.", "bn": "কেউ মিথ্যাবাদীকে বিশ্বাস করে না।"}, "ins": {"en": "Change into Interrogative.", "bn": "Interrogative-এ পরিবর্তন করো।"}, "ans": ["Who trusts a liar?", "Does anybody trust a liar?"], "opts": ["Who trusts a liar?", "Nobody trusts?", "Does nobody trust?", "Who does trust liar?"], "exp": {"en": "Nobody → Who / Does anybody", "bn": "Assertive → Interrogative।"}}, {"topic": "Interrogative ↔ Assertive", "q": {"en": "It is useless to go there now.", "bn": "এখন সেখানে যাওয়া বৃথা।"}, "ins": {"en": "Change into Interrogative.", "bn": "Interrogative-এ পরিবর্তন করো।"}, "ans": ["What is the use of going there now?"], "opts": ["What is the use of going there now?", "Is it useful to go?", "Why go there?", "How is it useless?"], "exp": {"en": "It is useless → What is the use", "bn": "Assertive → Interrogative।"}}, {"topic": "Interrogative ↔ Assertive", "q": {"en": "I can never forget you.", "bn": "আমি তোমাকে কখনো ভুলতে পারব না।"}, "ins": {"en": "Change into Interrogative.", "bn": "Interrogative-এ পরিবর্তন করো।"}, "ans": ["Can I ever forget you?"], "opts": ["Can I ever forget you?", "Can I never forget?", "I forget you?", "Will I forget?"], "exp": {"en": "I can never → Can I ever", "bn": "Assertive → Interrogative।"}}, {"topic": "Interrogative ↔ Assertive", "q": {"en": "Who does not know him?", "bn": "কে তাকে চিনে না?"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["Everybody knows him."], "opts": ["Everybody knows him.", "Nobody knows him.", "Who knows him?", "Someone knows him."], "exp": {"en": "Who does not know → Everybody knows", "bn": "Rhetorical।"}}, {"topic": "Interrogative ↔ Assertive", "q": {"en": "Is virtue not its own reward?", "bn": "গুণ কি নিজেই তার পুরস্কার নয়?"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["Virtue is its own reward."], "opts": ["Virtue is its own reward.", "Virtue is not reward.", "Is virtue reward?", "Virtue has no reward."], "exp": {"en": "Is … not → is", "bn": "Rhetorical।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "I know his name.", "bn": "আমি তার নাম জানি।"}, "ins": {"en": "Change into Complex (Noun Clause).", "bn": "Complex (Noun Clause)-এ পরিবর্তন করো।"}, "ans": ["I know what his name is."], "opts": ["I know what his name is.", "I know his name is.", "I know name.", "What is his name I know."], "exp": {"en": "Noun phrase → Noun clause", "bn": "Noun Clause।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "He is too weak to walk.", "bn": "সে হাঁটার পক্ষে খুব দুর্বল।"}, "ins": {"en": "Change into Complex.", "bn": "Complex-এ পরিবর্তন করো।"}, "ans": ["He is so weak that he cannot walk."], "opts": ["He is so weak that he cannot walk.", "He is weak to walk.", "He is too weak that he walks.", "He cannot walk weak."], "exp": {"en": "too…to → so…that…cannot", "bn": "Adverb Clause।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "In spite of his poverty, he is happy.", "bn": "দারিদ্র্য সত্ত্বেও সে সুখী।"}, "ins": {"en": "Change into Complex.", "bn": "Complex-এ পরিবর্তন করো।"}, "ans": ["Though he is poor, he is happy."], "opts": ["Though he is poor, he is happy.", "He is poor and happy.", "In spite he is happy.", "He is happy poverty."], "exp": {"en": "In spite of + N → Though + clause", "bn": "Concession।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "He is a rich man.", "bn": "সে একজন ধনী ব্যক্তি।"}, "ins": {"en": "Change into Complex (Adjective Clause).", "bn": "Complex (Adjective Clause)-এ পরিবর্তন করো।"}, "ans": ["He is a man who is rich."], "opts": ["He is a man who is rich.", "He is rich man who.", "Who is rich he is.", "He is man rich."], "exp": {"en": "Adjective → Relative clause", "bn": "Adjective Clause।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "On seeing the lion, he ran away.", "bn": "সিংহ দেখে সে পালিয়ে গেল।"}, "ins": {"en": "Change into Complex.", "bn": "Complex-এ পরিবর্তন করো।"}, "ans": ["When he saw the lion, he ran away."], "opts": ["When he saw the lion, he ran away.", "Seeing lion he ran.", "He ran on lion.", "He saw and ran."], "exp": {"en": "On + gerund → When + clause", "bn": "Time clause।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "Being tired, he refused to go.", "bn": "ক্লান্ত হয়ে সে যেতে অস্বীকার করল।"}, "ins": {"en": "Change into Complex.", "bn": "Complex-এ পরিবর্তন করো।"}, "ans": ["As he was tired, he refused to go."], "opts": ["As he was tired, he refused to go.", "Tired he refused.", "He refused being.", "He was tired refuse."], "exp": {"en": "Being + adj → As/Because + clause", "bn": "Reason।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "He is so weak that he cannot walk.", "bn": "সে এত দুর্বল যে হাঁটতে পারে না।"}, "ins": {"en": "Change into Simple.", "bn": "Simple-এ পরিবর্তন করো।"}, "ans": ["He is too weak to walk."], "opts": ["He is too weak to walk.", "He is weak so cannot.", "He cannot walk weak.", "So weak he walks."], "exp": {"en": "so…that…cannot → too…to", "bn": "Complex → Simple।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "Though he is poor, he is honest.", "bn": "দরিদ্র হলেও সে সৎ।"}, "ins": {"en": "Change into Simple.", "bn": "Simple-এ পরিবর্তন করো।"}, "ans": ["In spite of his poverty he is honest."], "opts": ["In spite of his poverty he is honest.", "Though poor honest.", "He is poor honest.", "Despite he is honest."], "exp": {"en": "Though → In spite of + N", "bn": "Complex → Simple।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "I am sure of passing.", "bn": "আমি পাস করার ব্যাপারে নিশ্চিত।"}, "ins": {"en": "Change into Complex.", "bn": "Complex-এ পরিবর্তন করো।"}, "ans": ["I am sure that I shall pass."], "opts": ["I am sure that I shall pass.", "I am sure pass.", "I sure of that pass.", "That I am sure pass."], "exp": {"en": "of + gerund → that-clause", "bn": "Noun Clause।"}}, {"topic": "Simple ↔ Complex", "q": {"en": "He hoped to win the prize.", "bn": "সে পুরস্কার জেতার আশা করেছিল।"}, "ins": {"en": "Change into Complex.", "bn": "Complex-এ পরিবর্তন করো।"}, "ans": ["He hoped that he would win the prize."], "opts": ["He hoped that he would win the prize.", "He hoped win prize.", "He hoped to that win.", "That he hoped win."], "exp": {"en": "to-inf → that-clause", "bn": "Noun Clause।"}}, {"topic": "Simple ↔ Compound", "q": {"en": "In spite of his poverty, he was happy.", "bn": "দারিদ্র্য সত্ত্বেও সে সুখী ছিল।"}, "ins": {"en": "Change into Compound.", "bn": "Compound-এ পরিবর্তন করো।"}, "ans": ["He was poor, yet he was happy.", "He was poor, but he was happy."], "opts": ["He was poor, yet he was happy.", "He was poor and happy.", "In spite he was happy.", "He was happy poverty."], "exp": {"en": "In spite of → yet/but", "bn": "Compound।"}}, {"topic": "Simple ↔ Compound", "q": {"en": "Having done his work, he left the place.", "bn": "কাজ শেষ করে সে চলে গেল।"}, "ins": {"en": "Change into Compound.", "bn": "Compound-এ পরিবর্তন করো।"}, "ans": ["He did his work and then left the place."], "opts": ["He did his work and then left the place.", "Having work he left.", "He left doing work.", "He did and left work."], "exp": {"en": "Having + PP → and then", "bn": "Compound।"}}, {"topic": "Simple ↔ Compound", "q": {"en": "Besides caning the boy he also fined him.", "bn": "বেত মারার পাশাপাশি জরিমানাও করল।"}, "ins": {"en": "Change into Compound.", "bn": "Compound-এ পরিবর্তন করো।"}, "ans": ["He not only caned the boy but also fined him."], "opts": ["He not only caned the boy but also fined him.", "He caned and fined.", "Besides he fined.", "He only caned the boy."], "exp": {"en": "Besides → not only…but also", "bn": "Compound।"}}, {"topic": "Simple ↔ Compound", "q": {"en": "You must work hard to succeed.", "bn": "সফল হতে হলে কঠোর পরিশ্রম করতে হবে।"}, "ins": {"en": "Change into Compound.", "bn": "Compound-এ পরিবর্তন করো।"}, "ans": ["You must work hard, or you will fail."], "opts": ["You must work hard, or you will fail.", "You work hard succeed.", "Must work to succeed.", "Work hard and succeed."], "exp": {"en": "to-inf of purpose → or", "bn": "Compound।"}}, {"topic": "Simple ↔ Compound", "q": {"en": "Though he is rich he is miserly.", "bn": "ধনী হলেও সে কৃপণ।"}, "ins": {"en": "Change into Compound.", "bn": "Compound-এ পরিবর্তন করো।"}, "ans": ["He is rich, yet he is miserly."], "opts": ["He is rich, yet he is miserly.", "He is rich miserly.", "Though rich miserly.", "He is miserly rich."], "exp": {"en": "Though → yet/but", "bn": "Complex → Compound।"}}, {"topic": "Simple ↔ Compound", "q": {"en": "If you try you will succeed.", "bn": "চেষ্টা করলে তুমি সফল হবে।"}, "ins": {"en": "Change into Compound.", "bn": "Compound-এ পরিবর্তন করো।"}, "ans": ["Try, and you will succeed."], "opts": ["Try, and you will succeed.", "If try succeed.", "You try succeed.", "Try if succeed."], "exp": {"en": "If → and (imperative)", "bn": "Complex → Compound।"}}, {"topic": "Simple ↔ Compound", "q": {"en": "Unless you speak I shall fire.", "bn": "তুমি না বললে আমি গুলি করব।"}, "ins": {"en": "Change into Compound.", "bn": "Compound-এ পরিবর্তন করো।"}, "ans": ["Speak, or I shall fire."], "opts": ["Speak, or I shall fire.", "Unless speak fire.", "You speak fire.", "Speak unless fire."], "exp": {"en": "Unless → or", "bn": "Complex → Compound।"}}, {"topic": "Parts of Speech", "q": {"en": "He acted prudently.", "bn": "সে বিচক্ষণতার সাথে কাজ করেছিল।"}, "ins": {"en": "Replace adverb by Noun.", "bn": "Adverb-কে Noun দিয়ে বদলাও।"}, "ans": ["He acted with prudence."], "opts": ["He acted with prudence.", "He acted prudent.", "He was prudent act.", "Prudently he acted with."], "exp": {"en": "prudently → with prudence", "bn": "Adverb → Noun।"}}, {"topic": "Parts of Speech", "q": {"en": "He treated me with scorn.", "bn": "সে আমাকে অবজ্ঞার সাথে ব্যবহার করেছিল।"}, "ins": {"en": "Replace by Adverb.", "bn": "Adverb দিয়ে বদলাও।"}, "ans": ["He treated me scornfully."], "opts": ["He treated me scornfully.", "He treated scorn.", "He was scornful treat.", "With scornfully he treated."], "exp": {"en": "with scorn → scornfully", "bn": "Noun phrase → Adverb।"}}, {"topic": "Parts of Speech", "q": {"en": "He gave a prompt answer.", "bn": "সে তাড়াতাড়ি উত্তর দিয়েছিল।"}, "ins": {"en": "Use a Verb.", "bn": "Verb ব্যবহার করো।"}, "ans": ["He answered promptly."], "opts": ["He answered promptly.", "He gave answer prompt.", "He was prompt answer.", "Promptly he gave."], "exp": {"en": "gave a prompt answer → answered promptly", "bn": "Noun → Verb।"}}, {"topic": "Parts of Speech", "q": {"en": "He is strong enough to do it.", "bn": "সে এটা করার মতো যথেষ্ট শক্তিশালী।"}, "ins": {"en": "Use Noun for strong.", "bn": "strong-এর জন্য Noun ব্যবহার করো।"}, "ans": ["He has the strength to do it."], "opts": ["He has the strength to do it.", "He is strength enough.", "He strong has.", "Strength he is."], "exp": {"en": "strong → strength", "bn": "Adjective → Noun।"}}, {"topic": "Parts of Speech", "q": {"en": "It is unfortunate that he failed.", "bn": "দুর্ভাগ্যবশত সে ব্যর্থ হয়েছিল।"}, "ins": {"en": "Use an Adverb.", "bn": "Adverb ব্যবহার করো।"}, "ans": ["Unfortunately he failed."], "opts": ["Unfortunately he failed.", "It is unfortunate fail.", "He failed unfortunate.", "Unfortunate that he."], "exp": {"en": "It is unfortunate that → Unfortunately", "bn": "Adjective → Adverb।"}}, {"topic": "Miscellaneous", "q": {"en": "As soon as he came, he made objections.", "bn": "সে আসামাত্রই আপত্তি তুলল।"}, "ins": {"en": "Use No sooner…than.", "bn": "No sooner…than ব্যবহার করো।"}, "ans": ["No sooner did he come than he made objections."], "opts": ["No sooner did he come than he made objections.", "As soon as he did come he objected.", "No sooner he came he objected.", "He came no sooner."], "exp": {"en": "As soon as → No sooner…than", "bn": "Misc।"}}, {"topic": "Miscellaneous", "q": {"en": "Unless you work hard you cannot succeed.", "bn": "কঠোর পরিশ্রম না করলে সফল হতে পারবে না।"}, "ins": {"en": "Use If…not.", "bn": "If…not ব্যবহার করো।"}, "ans": ["If you do not work hard you cannot succeed."], "opts": ["If you do not work hard you cannot succeed.", "Unless you do work hard.", "If you work hard not.", "You cannot succeed unless."], "exp": {"en": "Unless → If…not", "bn": "Misc।"}}, {"topic": "Miscellaneous", "q": {"en": "Everyone would admit that he is honest.", "bn": "সবাই স্বীকার করবে যে সে সৎ।"}, "ins": {"en": "Make Negative.", "bn": "Negative করো।"}, "ans": ["No one would deny that he is honest."], "opts": ["No one would deny that he is honest.", "Everyone would deny.", "No one would admit.", "He is not honest."], "exp": {"en": "Everyone admit → No one deny", "bn": "Misc।"}}, {"topic": "Miscellaneous", "q": {"en": "I would die sooner than injure you.", "bn": "তোমাকে আহত করার চেয়ে আমি মরতে রাজি।"}, "ins": {"en": "Use Positive degree.", "bn": "Positive degree ব্যবহার করো।"}, "ans": ["I would as soon die as injure you."], "opts": ["I would as soon die as injure you.", "I would die soon.", "I injure you sooner.", "Die as injure."], "exp": {"en": "sooner than → as soon … as", "bn": "Degree।"}}, {"topic": "Miscellaneous", "q": {"en": "This is too small a thing to put down.", "bn": "এটা লেখার মতো খুব ছোট বিষয়।"}, "ins": {"en": "Omit too.", "bn": "too বাদ দাও।"}, "ans": ["This is so small a thing that it cannot be put down."], "opts": ["This is so small a thing that it cannot be put down.", "This is small to put.", "This is too small that.", "Small thing put down."], "exp": {"en": "too…to → so…that…cannot", "bn": "too…to।"}}, {"topic": "Miscellaneous", "q": {"en": "He had to call a meeting.", "bn": "তাকে মিটিং ডাকতে হয়েছিল।"}, "ins": {"en": "Make Negative without changing meaning.", "bn": "অর্থ না বদলে Negative করো।"}, "ans": ["He could not help calling a meeting.", "He could not but call a meeting."], "opts": ["He could not help calling a meeting.", "He had not to call.", "He could call meeting.", "He did not call."], "exp": {"en": "had to → could not help / could not but", "bn": "Misc।"}}, {"topic": "Miscellaneous", "q": {"en": "Why waste time in reading trash?", "bn": "আজেবাজে জিনিস পড়ে সময় নষ্ট করছ কেন?"}, "ins": {"en": "Change into Assertive.", "bn": "Assertive-এ পরিবর্তন করো।"}, "ans": ["It is no use wasting time in reading trash."], "opts": ["It is no use wasting time in reading trash.", "Why waste time?", "Waste time in trash.", "Reading trash is useful."], "exp": {"en": "Why + V → It is no use", "bn": "Interrogative।"}}, {"topic": "Miscellaneous", "q": {"en": "One cannot gather grapes from thistles.", "bn": "কাঁটাঝোপ থেকে আঙুর পাওয়া যায় না।"}, "ins": {"en": "Change into Passive.", "bn": "Passive-এ পরিবর্তন করো।"}, "ans": ["Grapes cannot be gathered from thistles."], "opts": ["Grapes cannot be gathered from thistles.", "Thistles cannot gather grapes.", "One gathers grapes.", "Grapes are gathered."], "exp": {"en": "Active → Passive", "bn": "Voice।"}}, {"topic": "Miscellaneous", "q": {"en": "The fact is so evident that it requires no proof.", "bn": "তথ্যটি এত স্পষ্ট যে প্রমাণের প্রয়োজন নেই।"}, "ins": {"en": "Replace so by too.", "bn": "so-এর বদলে too ব্যবহার করো।"}, "ans": ["The fact is too evident to require any proof."], "opts": ["The fact is too evident to require any proof.", "The fact is so evident to require.", "The fact is evident too.", "Too evident the fact."], "exp": {"en": "so…that…no → too…to", "bn": "too…to।"}}, {"topic": "Miscellaneous", "q": {"en": "Einstein was the greatest scientist of our century.", "bn": "আইনস্টাইন আমাদের শতাব্দীর সর্বশ্রেষ্ঠ বিজ্ঞানী।"}, "ins": {"en": "Use Comparative.", "bn": "Comparative ব্যবহার করো।"}, "ans": ["Einstein was greater than any other scientist of our century."], "opts": ["Einstein was greater than any other scientist of our century.", "Einstein was greater scientist.", "Einstein was the greater.", "Any scientist was greater."], "exp": {"en": "the greatest → greater than any other", "bn": "Degree।"}}, {"topic": "Miscellaneous", "q": {"en": "If you do not work hard, you cannot succeed.", "bn": "কঠোর পরিশ্রম না করলে সফল হতে পারবে না।"}, "ins": {"en": "Use unless.", "bn": "unless ব্যবহার করো।"}, "ans": ["Unless you work hard, you cannot succeed."], "opts": ["Unless you work hard, you cannot succeed.", "If you work hard unless.", "Unless you do not work.", "You succeed unless work."], "exp": {"en": "If…not → Unless", "bn": "Misc।"}}, {"topic": "Miscellaneous", "q": {"en": "God is present everywhere.", "bn": "ঈশ্বর সর্বত্র বিরাজমান।"}, "ins": {"en": "Use one word for present everywhere.", "bn": "একটি শব্দে লেখো।"}, "ans": ["God is omnipresent."], "opts": ["God is omnipresent.", "God is present.", "God is everywhere present.", "God is omniscient."], "exp": {"en": "present everywhere → omnipresent", "bn": "One-word।"}}, {"topic": "Miscellaneous", "q": {"en": "In spite of his illness he came.", "bn": "অসুস্থতা সত্ত্বেও সে এসেছিল।"}, "ins": {"en": "Use Though.", "bn": "Though ব্যবহার করো।"}, "ans": ["Though he was ill, he came."], "opts": ["Though he was ill, he came.", "In spite he came.", "Though illness he came.", "He came illness."], "exp": {"en": "In spite of → Though", "bn": "Misc।"}}, {"topic": "Miscellaneous", "q": {"en": "There is no doubt that he is honest.", "bn": "তাতে সন্দেহ নেই যে সে সৎ।"}, "ins": {"en": "Use noun form of honest as subject.", "bn": "honest-এর Noun form subject হিসেবে ব্যবহার করো।"}, "ans": ["His honesty is beyond doubt."], "opts": ["His honesty is beyond doubt.", "He is honest no doubt.", "Doubt he is honest.", "Honesty is he."], "exp": {"en": "There is no doubt that he is Adj → His N is beyond doubt", "bn": "Noun form।"}}, {"topic": "Miscellaneous", "q": {"en": "Calcutta is one of the biggest cities in India.", "bn": "কলকাতা ভারতের অন্যতম বৃহত্তম শহর।"}, "ins": {"en": "Change into Positive.", "bn": "Positive-এ পরিবর্তন করো।"}, "ans": ["Very few cities in India are so big as Calcutta."], "opts": ["Very few cities in India are so big as Calcutta.", "Calcutta is the biggest.", "Few cities are big.", "Calcutta is bigger city."], "exp": {"en": "one of the biggest → Very few … so … as", "bn": "Degree।"}}];
 
-/* ========== MASSIVE QUESTION BANK (from Ex 71–81 + misc + IAS) ========== */
-const Q=[
-/* Degree */
-{id:"d1",topic:"Degree of Comparison",q:{en:"He is as good as his brother.",bn:"সে তার ভাইয়ের মতোই ভালো।"},ins:{en:"Change into Comparative.",bn:"Comparative-এ পরিবর্তন করো।"},ans:["His brother is not better than he.","His brother is not better than him."],exp:{en:"as…as → not better than",bn:"as…as কে not better than করা হয়।"}},
-{id:"d2",topic:"Degree of Comparison",q:{en:"The cow is the most useful of all animals.",bn:"গরু সব প্রাণীর মধ্যে সবচেয়ে উপকারী।"},ins:{en:"Change into Comparative & Positive.",bn:"Comparative ও Positive-এ পরিবর্তন করো।"},ans:["The cow is more useful than any other animal.","No other animal is so useful as the cow."],exp:{en:"the most → more than any other / No other … so … as",bn:"Superlative থেকে Comparative ও Positive।"}},
-{id:"d3",topic:"Degree of Comparison",q:{en:"Iron is the most useful of all metals.",bn:"লোহা সব ধাতুর মধ্যে সবচেয়ে উপকারী।"},ins:{en:"Change into Comparative & Positive.",bn:"Comparative ও Positive-এ পরিবর্তন করো।"},ans:["Iron is more useful than any other metal.","No other metal is so useful as iron."],exp:{en:"Same pattern as above.",bn:"উপরের মতোই।"}},
-{id:"d4",topic:"Degree of Comparison",q:{en:"He is better than any other boy in the class.",bn:"সে ক্লাসের অন্য যেকোনো ছেলের চেয়ে ভালো।"},ins:{en:"Change into Superlative & Positive.",bn:"Superlative ও Positive-এ পরিবর্তন করো।"},ans:["He is the best boy in the class.","No other boy in the class is so good as he."],exp:{en:"better than any other → the best / No other … so … as",bn:"Comparative থেকে Superlative।"}},
-{id:"d5",topic:"Degree of Comparison",q:{en:"No other place is so charming as this.",bn:"এর মতো এত চমৎকার আর কোনো জায়গা নেই।"},ins:{en:"Change into Comparative & Superlative.",bn:"Comparative ও Superlative-এ পরিবর্তন করো।"},ans:["This is more charming than any other place.","This is the most charming of all places."],exp:{en:"No other … so … as → more than any other / the most",bn:"Positive থেকে Comparative/Superlative।"}},
-{id:"d6",topic:"Degree of Comparison",q:{en:"Asoke was the greatest of the kings of India.",bn:"অশোক ভারতের রাজাদের মধ্যে সর্বশ্রেষ্ঠ ছিলেন।"},ins:{en:"Change into Comparative & Positive.",bn:"Comparative ও Positive-এ পরিবর্তন করো।"},ans:["Asoke was greater than any other king of India.","No other king of India was so great as Asoke."],exp:{en:"the greatest → greater than any other",bn:"Superlative থেকে Comparative।"}},
-{id:"d7",topic:"Degree of Comparison",q:{en:"Akbar was one of the greatest kings of India.",bn:"আকবর ভারতের অন্যতম শ্রেষ্ঠ রাজা ছিলেন।"},ins:{en:"Change into Comparative & Positive.",bn:"Comparative ও Positive-এ পরিবর্তন করো।"},ans:["Akbar was greater than most other kings of India.","Very few kings of India were so great as Akbar."],exp:{en:"one of the greatest → greater than most other / Very few … so … as",bn:"'one of the' প্যাটার্ন।"}},
-{id:"d8",topic:"Degree of Comparison",q:{en:"This train runs faster than any other train.",bn:"এই ট্রেন অন্য যেকোনো ট্রেনের চেয়ে দ্রুত চলে।"},ins:{en:"Change into Superlative & Positive.",bn:"Superlative ও Positive-এ পরিবর্তন করো।"},ans:["This is the fastest train.","No other train runs so fast as this."],exp:{en:"faster than any other → the fastest",bn:"Comparative থেকে Superlative।"}},
-{id:"d9",topic:"Degree of Comparison",q:{en:"There are few places as cold as this.",bn:"এর মতো এত ঠান্ডা জায়গা কমই আছে।"},ins:{en:"Change into Comparative & Superlative.",bn:"Comparative ও Superlative-এ পরিবর্তন করো।"},ans:["This is colder than most other places.","This is one of the coldest places."],exp:{en:"few … as … as → colder than most other / one of the coldest",bn:"few প্যাটার্ন।"}},
-{id:"d10",topic:"Degree of Comparison",q:{en:"Very few countries are so rich as this.",bn:"এর মতো এত ধনী দেশ খুব কমই আছে।"},ins:{en:"Change into Comparative & Superlative.",bn:"Comparative ও Superlative-এ পরিবর্তন করো।"},ans:["This is richer than most other countries.","This is one of the richest countries."],exp:{en:"Very few … so … as → richer than most other",bn:"Very few প্যাটার্ন।"}},
-{id:"d11",topic:"Degree of Comparison",q:{en:"This is one of the best things here.",bn:"এটি এখানকার অন্যতম সেরা জিনিস।"},ins:{en:"Change into Comparative & Positive.",bn:"Comparative ও Positive-এ পরিবর্তন করো।"},ans:["This is better than most other things here.","Very few things here are so good as this."],exp:{en:"one of the best → better than most other",bn:"one of the প্যাটার্ন।"}},
-{id:"d12",topic:"Degree of Comparison",q:{en:"Health is more valuable than wealth.",bn:"স্বাস্থ্য সম্পদের চেয়ে বেশি মূল্যবান।"},ins:{en:"Change into Positive.",bn:"Positive-এ পরিবর্তন করো।"},ans:["Wealth is not so valuable as health.","Wealth is not as valuable as health."],exp:{en:"more … than → not so … as",bn:"Comparative থেকে Positive।"}},
-{id:"d13",topic:"Degree of Comparison",q:{en:"He is duller than an ass.",bn:"সে গাধার চেয়েও বোকা।"},ins:{en:"Change into Positive.",bn:"Positive-এ পরিবর্তন করো।"},ans:["An ass is not so dull as he.","An ass is not as dull as he."],exp:{en:"duller than → not so dull as",bn:"Comparative থেকে Positive।"}},
-{id:"d14",topic:"Degree of Comparison",q:{en:"He cannot run so fast as I.",bn:"সে আমার মতো দ্রুত দৌড়াতে পারে না।"},ins:{en:"Change into Comparative.",bn:"Comparative-এ পরিবর্তন করো।"},ans:["I can run faster than he.","I can run faster than him."],exp:{en:"cannot … so … as → can … faster than",bn:"Negative Positive থেকে Comparative।"}},
-{id:"d15",topic:"Degree of Comparison",q:{en:"She is as clever as you.",bn:"সে তোমার মতোই চতুর।"},ins:{en:"Change into Comparative.",bn:"Comparative-এ পরিবর্তন করো।"},ans:["You are not cleverer than she.","You are not cleverer than her."],exp:{en:"as … as → not cleverer than",bn:"as…as প্যাটার্ন।"}},
-{id:"d16",topic:"Degree of Comparison",q:{en:"This newspaper has a bigger circulation than any other morning paper.",bn:"এই সংবাদপত্রের প্রচার অন্য যেকোনো সকালের কাগজের চেয়ে বেশি।"},ins:{en:"Use the Superlative.",bn:"Superlative ব্যবহার করো।"},ans:["This newspaper has the biggest circulation of all the morning papers."],exp:{en:"bigger than any other → the biggest",bn:"Comparative থেকে Superlative।"}},
-{id:"d17",topic:"Degree of Comparison",q:{en:"Australia is the largest island in the world.",bn:"অস্ট্রেলিয়া বিশ্বের বৃহত্তম দ্বীপ।"},ins:{en:"Change into Comparative.",bn:"Comparative-এ পরিবর্তন করো।"},ans:["Australia is larger than any other island in the world.","Australia is larger than all other islands in the world."],exp:{en:"the largest → larger than any other",bn:"Superlative থেকে Comparative।"}},
-{id:"d18",topic:"Degree of Comparison",q:{en:"No other reptile is so vile as the cobra.",bn:"কোবরার মতো এত জঘন্য আর কোনো সরীসৃপ নেই।"},ins:{en:"Use the Superlative.",bn:"Superlative ব্যবহার করো।"},ans:["The cobra is the vilest of all reptiles."],exp:{en:"No other … so … as → the +est",bn:"Positive থেকে Superlative।"}},
-{id:"d19",topic:"Degree of Comparison",q:{en:"Mount Everest is the highest peak in the world.",bn:"মাউন্ট এভারেস্ট বিশ্বের সর্বোচ্চ শৃঙ্গ।"},ins:{en:"Change into Negative without changing meaning.",bn:"অর্থ না বদলে Negative করো।"},ans:["No other peak in the world is so high as Mount Everest."],exp:{en:"the highest → No other … so high as",bn:"Superlative থেকে Negative Positive।"}},
-{id:"d20",topic:"Degree of Comparison",q:{en:"Ram is the best student of his class.",bn:"রাম তার ক্লাসের সেরা ছাত্র।"},ins:{en:"Change into Comparative.",bn:"Comparative-এ পরিবর্তন করো।"},ans:["Ram is better than any other student in his class."],exp:{en:"the best → better than any other",bn:"Superlative থেকে Comparative।"}},
-
-/* Affirmative ↔ Negative */
-{id:"a1",topic:"Affirmative ↔ Negative",q:{en:"I am not an unreasonable man.",bn:"আমি অযৌক্তিক মানুষ নই।"},ins:{en:"Change into Affirmative.",bn:"Affirmative-এ পরিবর্তন করো।"},ans:["I am a reasonable man."],exp:{en:"not + unreasonable → reasonable",bn:"বিপরীত শব্দ ব্যবহার।"}},
-{id:"a2",topic:"Affirmative ↔ Negative",q:{en:"I shall not forget you.",bn:"আমি তোমাকে ভুলব না।"},ins:{en:"Change into Affirmative.",bn:"Affirmative-এ পরিবর্তন করো।"},ans:["I shall always remember you."],exp:{en:"not forget → always remember",bn:"not forget = always remember।"}},
-{id:"a3",topic:"Affirmative ↔ Negative",q:{en:"Everybody likes her.",bn:"সবাই তাকে পছন্দ করে।"},ins:{en:"Change into Negative.",bn:"Negative-এ পরিবর্তন করো।"},ans:["Nobody dislikes her.","There is nobody who does not like her."],exp:{en:"Everybody → Nobody + opposite",bn:"Everybody প্যাটার্ন।"}},
-{id:"a4",topic:"Affirmative ↔ Negative",q:{en:"All were present in the meeting.",bn:"সভায় সবাই উপস্থিত ছিল।"},ins:{en:"Change into Negative.",bn:"Negative-এ পরিবর্তন করো।"},ans:["No one was absent from the meeting.","Nobody was absent in the meeting."],exp:{en:"All present → No one absent",bn:"All → No one + opposite।"}},
-{id:"a5",topic:"Affirmative ↔ Negative",q:{en:"The boy is too lazy to be successful.",bn:"ছেলেটি এত অলস যে সফল হতে পারে না।"},ins:{en:"Change using so…that.",bn:"so…that ব্যবহার করে পরিবর্তন করো।"},ans:["The boy is so lazy that he cannot be successful."],exp:{en:"too…to → so…that…cannot",bn:"too…to প্যাটার্ন।"}},
-{id:"a6",topic:"Affirmative ↔ Negative",q:{en:"As soon as I arrived, the noise ceased.",bn:"আমি পৌঁছানোমাত্রই শব্দ থেমে গেল।"},ins:{en:"Use No sooner…than.",bn:"No sooner…than ব্যবহার করো।"},ans:["No sooner did I arrive than the noise ceased.","No sooner had I arrived than the noise ceased."],exp:{en:"As soon as → No sooner + aux + S + V + than",bn:"As soon as প্যাটার্ন।"}},
-{id:"a7",topic:"Affirmative ↔ Negative",q:{en:"You alone can do this.",bn:"শুধু তুমিই এটা করতে পারো।"},ins:{en:"Use None but.",bn:"None but ব্যবহার করো।"},ans:["None but you can do this."],exp:{en:"Alone / Only → None but",bn:"Only/Alone প্যাটার্ন।"}},
-{id:"a8",topic:"Affirmative ↔ Negative",q:{en:"He must obey you.",bn:"তাকে তোমার আনুগত্য করতেই হবে।"},ins:{en:"Change into Negative.",bn:"Negative-এ পরিবর্তন করো।"},ans:["He cannot but obey you.","He has no option but to obey you."],exp:{en:"must → cannot but",bn:"must প্যাটার্ন।"}},
-{id:"a9",topic:"Affirmative ↔ Negative",q:{en:"He tried all plans.",bn:"সে সব পরিকল্পনা চেষ্টা করেছিল।"},ins:{en:"Change into Negative.",bn:"Negative-এ পরিবর্তন করো।"},ans:["He left no plan untried."],exp:{en:"tried all → left no … untried",bn:"Double negative প্যাটার্ন।"}},
-{id:"a10",topic:"Affirmative ↔ Negative",q:{en:"I know him.",bn:"আমি তাকে চিনি।"},ins:{en:"Change into Negative (double negative).",bn:"দ্বৈত নেগেটিভ ব্যবহার করে Negative করো।"},ans:["It is not that I do not know him.","I am not without knowledge of him."],exp:{en:"Double negative preserves meaning.",bn:"দ্বৈত নেগেটিভ।"}},
-{id:"a11",topic:"Affirmative ↔ Negative",q:{en:"Only Ram was present there.",bn:"শুধু রাম সেখানে উপস্থিত ছিল।"},ins:{en:"Change into Negative.",bn:"Negative-এ পরিবর্তন করো।"},ans:["None but Ram was present there."],exp:{en:"Only → None but",bn:"Only প্যাটার্ন।"}},
-{id:"a12",topic:"Affirmative ↔ Negative",q:{en:"None but the brave deserve the fair.",bn:"শুধু সাহসীরাই সুন্দরীদের প্রাপ্য।"},ins:{en:"Change into Affirmative.",bn:"Affirmative-এ পরিবর্তন করো।"},ans:["Only the brave deserve the fair."],exp:{en:"None but → Only",bn:"None but প্যাটার্ন।"}},
-{id:"a13",topic:"Affirmative ↔ Negative",q:{en:"He is too honest to accept a bribe.",bn:"সে এত সৎ যে ঘুষ নিতে পারে না।"},ins:{en:"Remove 'too'.",bn:"'too' সরিয়ে লেখো।"},ans:["He is so honest that he cannot accept a bribe."],exp:{en:"too…to → so…that…cannot",bn:"too…to প্যাটার্ন।"}},
-{id:"a14",topic:"Affirmative ↔ Negative",q:{en:"No sooner did she see me than she burst into tears.",bn:"সে আমাকে দেখামাত্রই কেঁদে ফেলল।"},ins:{en:"Use As soon as.",bn:"As soon as ব্যবহার করো।"},ans:["As soon as she saw me she burst into tears."],exp:{en:"No sooner…than → As soon as",bn:"বিপরীত রূপান্তর।"}},
-{id:"a15",topic:"Affirmative ↔ Negative",q:{en:"Everybody will admit that he is honest.",bn:"সবাই স্বীকার করবে যে সে সৎ।"},ins:{en:"Change into Negative.",bn:"Negative-এ পরিবর্তন করো।"},ans:["Nobody will deny that he is honest."],exp:{en:"Everybody admit → Nobody deny",bn:"Everybody প্যাটার্ন।"}},
-{id:"a16",topic:"Affirmative ↔ Negative",q:{en:"I was never absent in the class.",bn:"আমি ক্লাসে কখনো অনুপস্থিত ছিলাম না।"},ins:{en:"Change into Affirmative.",bn:"Affirmative-এ পরিবর্তন করো।"},ans:["I was always present in the class."],exp:{en:"never absent → always present",bn:"never + opposite।"}},
-{id:"a17",topic:"Affirmative ↔ Negative",q:{en:"He left no plan untried.",bn:"সে কোনো পরিকল্পনা চেষ্টা না করে ছাড়েনি।"},ins:{en:"Change into Affirmative.",bn:"Affirmative-এ পরিবর্তন করো।"},ans:["He tried all plans."],exp:{en:"left no … untried → tried all",bn:"Double negative থেকে Affirmative।"}},
-{id:"a18",topic:"Affirmative ↔ Negative",q:{en:"There is no smoke without fire.",bn:"আগুন ছাড়া ধোঁয়া হয় না।"},ins:{en:"Change into Affirmative.",bn:"Affirmative-এ পরিবর্তন করো।"},ans:["Every fire has smoke.","Smoke always accompanies fire."],exp:{en:"no … without → every / always",bn:"no…without প্যাটার্ন।"}},
-{id:"a19",topic:"Affirmative ↔ Negative",q:{en:"He is a man of no mean ability.",bn:"সে অসামান্য যোগ্যতার মানুষ।"},ins:{en:"Change into Affirmative.",bn:"Affirmative-এ পরিবর্তন করো।"},ans:["He is a man of marked ability.","He is a man of great ability."],exp:{en:"no mean → marked / great",bn:"Litotes।"}},
-{id:"a20",topic:"Affirmative ↔ Negative",q:{en:"As soon as I reached the station the train left.",bn:"আমি স্টেশনে পৌঁছানোমাত্রই ট্রেন ছেড়ে দিল।"},ins:{en:"Use No sooner…than.",bn:"No sooner…than ব্যবহার করো।"},ans:["No sooner had I reached the station than the train left.","No sooner did I reach the station than the train left."],exp:{en:"As soon as → No sooner…than",bn:"As soon as প্যাটার্ন।"}},
-
-/* Exclamatory ↔ Assertive */
-{id:"e1",topic:"Exclamatory ↔ Assertive",q:{en:"Oh, that I were there at the time!",bn:"হায়, সে সময়ে যদি আমি সেখানে থাকতাম!"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["I wish I were there at the time."],exp:{en:"Oh that → I wish",bn:"Wish প্যাটার্ন।"}},
-{id:"e2",topic:"Exclamatory ↔ Assertive",q:{en:"What a sight it was!",bn:"কী দৃশ্য ছিল তা!"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["It was a wonderful sight.","It was a remarkable sight."],exp:{en:"What a → It was a + adj",bn:"What a প্যাটার্ন।"}},
-{id:"e3",topic:"Exclamatory ↔ Assertive",q:{en:"How angry you are!",bn:"তুমি কত রাগী!"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["You are very angry."],exp:{en:"How + adj → very + adj",bn:"How প্যাটার্ন।"}},
-{id:"e4",topic:"Exclamatory ↔ Assertive",q:{en:"I wish I had a good house.",bn:"আমি ইচ্ছা করি আমার একটি ভালো বাড়ি থাকত।"},ins:{en:"Change into Exclamatory.",bn:"Exclamatory-এ পরিবর্তন করো।"},ans:["Oh, that I had a good house!","Had I but a good house!","Would that I had a good house!"],exp:{en:"I wish → Oh that / Had I but",bn:"Wish থেকে Exclamatory।"}},
-{id:"e5",topic:"Exclamatory ↔ Assertive",q:{en:"It was a grand victory.",bn:"এটি একটি জমকালো বিজয় ছিল।"},ins:{en:"Change into Exclamatory.",bn:"Exclamatory-এ পরিবর্তন করো।"},ans:["What a grand victory it was!"],exp:{en:"It was a + adj + N → What a + adj + N",bn:"What a প্যাটার্ন।"}},
-{id:"e6",topic:"Exclamatory ↔ Assertive",q:{en:"How beautiful the picture is!",bn:"ছবিটি কত সুন্দর!"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["The picture is very beautiful."],exp:{en:"How + adj → very + adj",bn:"How প্যাটার্ন।"}},
-{id:"e7",topic:"Exclamatory ↔ Assertive",q:{en:"Alas, that you should act thus!",bn:"হায়, তুমি এমন আচরণ করবে!"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["It is sad that you should act thus.","It is regrettable that you should act thus."],exp:{en:"Alas that → It is sad/regrettable that",bn:"Alas প্যাটার্ন।"}},
-{id:"e8",topic:"Exclamatory ↔ Assertive",q:{en:"What a clever piece of work it was!",bn:"কী চতুর কাজ ছিল তা!"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["It was a very clever piece of work."],exp:{en:"What a → It was a very",bn:"What a প্যাটার্ন।"}},
-{id:"e9",topic:"Exclamatory ↔ Assertive",q:{en:"He leads a most unhappy life.",bn:"সে অত্যন্ত দুঃখজনক জীবন যাপন করে।"},ins:{en:"Change into Exclamatory.",bn:"Exclamatory-এ পরিবর্তন করো।"},ans:["What an unhappy life he leads!"],exp:{en:"most unhappy → What an unhappy",bn:"What a প্যাটার্ন।"}},
-{id:"e10",topic:"Exclamatory ↔ Assertive",q:{en:"Oh, for the wings of a dove!",bn:"হায়, যদি পাখির ডানা থাকত!"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["I wish I had the wings of a dove."],exp:{en:"Oh for → I wish I had",bn:"Wish প্যাটার্ন।"}},
-
-/* Interrogative ↔ Assertive */
-{id:"i1",topic:"Interrogative ↔ Assertive",q:{en:"Who does not wish to be happy?",bn:"কে সুখী হতে চায় না?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["Everybody wishes to be happy.","Everyone wishes to be happy."],exp:{en:"Who does not → Everybody",bn:"Rhetorical question।"}},
-{id:"i2",topic:"Interrogative ↔ Assertive",q:{en:"Shall I ever forget a friend like you?",bn:"তোমার মতো বন্ধুকে কি আমি কখনো ভুলব?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["I shall never forget a friend like you."],exp:{en:"Shall I ever → I shall never",bn:"Rhetorical।"}},
-{id:"i3",topic:"Interrogative ↔ Assertive",q:{en:"Can anybody have faith in such a liar?",bn:"এমন মিথ্যাবাদীর উপর কে বিশ্বাস করতে পারে?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["Nobody can have faith in such a liar."],exp:{en:"Can anybody → Nobody can",bn:"Rhetorical।"}},
-{id:"i4",topic:"Interrogative ↔ Assertive",q:{en:"Of what use is such an old thing?",bn:"এমন পুরোনো জিনিসের কী ব্যবহার?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["Such an old thing is of no use.","There is no use of such an old thing."],exp:{en:"Of what use → of no use",bn:"Rhetorical।"}},
-{id:"i5",topic:"Interrogative ↔ Assertive",q:{en:"Is this the way you return my kindness?",bn:"এভাবেই কি তুমি আমার দয়ার প্রতিদান দিচ্ছ?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["This is not the way you should return my kindness."],exp:{en:"Is this the way → This is not the way",bn:"Rhetorical।"}},
-{id:"i6",topic:"Interrogative ↔ Assertive",q:{en:"Nobody trusts a liar.",bn:"কেউ মিথ্যাবাদীকে বিশ্বাস করে না।"},ins:{en:"Change into Interrogative.",bn:"Interrogative-এ পরিবর্তন করো।"},ans:["Who trusts a liar?","Does anybody trust a liar?"],exp:{en:"Nobody → Who / Does anybody",bn:"Assertive থেকে Interrogative।"}},
-{id:"i7",topic:"Interrogative ↔ Assertive",q:{en:"It is useless to go there now.",bn:"এখন সেখানে যাওয়া বৃথা।"},ins:{en:"Change into Interrogative.",bn:"Interrogative-এ পরিবর্তন করো।"},ans:["What is the use of going there now?"],exp:{en:"It is useless → What is the use",bn:"Assertive থেকে Interrogative।"}},
-{id:"i8",topic:"Interrogative ↔ Assertive",q:{en:"I can never forget you.",bn:"আমি তোমাকে কখনো ভুলতে পারব না।"},ins:{en:"Change into Interrogative.",bn:"Interrogative-এ পরিবর্তন করো।"},ans:["Can I ever forget you?","Shall I ever forget you?"],exp:{en:"I can never → Can I ever",bn:"Assertive থেকে Interrogative।"}},
-{id:"i9",topic:"Interrogative ↔ Assertive",q:{en:"Who does not know him?",bn:"কে তাকে চিনে না?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["Everybody knows him."],exp:{en:"Who does not → Everybody",bn:"Rhetorical।"}},
-{id:"i10",topic:"Interrogative ↔ Assertive",q:{en:"Is virtue not its own reward?",bn:"গুণ কি নিজেই তার পুরস্কার নয়?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["Virtue is its own reward."],exp:{en:"Is … not → is",bn:"Rhetorical।"}},
-
-/* Simple ↔ Complex */
-{id:"sc1",topic:"Simple ↔ Complex",q:{en:"I know his name.",bn:"আমি তার নাম জানি।"},ins:{en:"Change into Complex (Noun Clause).",bn:"Complex (Noun Clause)-এ পরিবর্তন করো।"},ans:["I know what his name is."],exp:{en:"Noun phrase → Noun clause",bn:"Noun Clause।"}},
-{id:"sc2",topic:"Simple ↔ Complex",q:{en:"He is too weak to walk.",bn:"সে হাঁটার পক্ষে খুব দুর্বল।"},ins:{en:"Change into Complex.",bn:"Complex-এ পরিবর্তন করো।"},ans:["He is so weak that he cannot walk."],exp:{en:"too…to → so…that…cannot",bn:"Adverb Clause of result।"}},
-{id:"sc3",topic:"Simple ↔ Complex",q:{en:"In spite of his poverty, he is happy.",bn:"দারিদ্র্য সত্ত্বেও সে সুখী।"},ins:{en:"Change into Complex.",bn:"Complex-এ পরিবর্তন করো।"},ans:["Though he is poor, he is happy.","Although he is poor, he is happy."],exp:{en:"In spite of + N → Though + clause",bn:"Adverb Clause of concession।"}},
-{id:"sc4",topic:"Simple ↔ Complex",q:{en:"He is a rich man.",bn:"সে একজন ধনী ব্যক্তি।"},ins:{en:"Change into Complex (Adjective Clause).",bn:"Complex (Adjective Clause)-এ পরিবর্তন করো।"},ans:["He is a man who is rich."],exp:{en:"Adjective → Relative clause",bn:"Adjective Clause।"}},
-{id:"sc5",topic:"Simple ↔ Complex",q:{en:"On seeing the lion, he ran away.",bn:"সিংহ দেখে সে পালিয়ে গেল।"},ins:{en:"Change into Complex.",bn:"Complex-এ পরিবর্তন করো।"},ans:["When he saw the lion, he ran away."],exp:{en:"On + gerund → When + clause",bn:"Adverb Clause of time।"}},
-{id:"sc6",topic:"Simple ↔ Complex",q:{en:"Being tired, he refused to go.",bn:"ক্লান্ত হয়ে সে যেতে অস্বীকার করল।"},ins:{en:"Change into Complex.",bn:"Complex-এ পরিবর্তন করো।"},ans:["As he was tired, he refused to go.","Because he was tired, he refused to go."],exp:{en:"Being + adj → As/Because + clause",bn:"Adverb Clause of reason।"}},
-{id:"sc7",topic:"Simple ↔ Complex",q:{en:"I desire to go.",bn:"আমি যেতে চাই।"},ins:{en:"Change into Complex.",bn:"Complex-এ পরিবর্তন করো।"},ans:["I desire that I should go."],exp:{en:"to-inf → that-clause",bn:"Noun Clause।"}},
-{id:"sc8",topic:"Simple ↔ Complex",q:{en:"He hoped to win the prize.",bn:"সে পুরস্কার জেতার আশা করেছিল।"},ins:{en:"Change into Complex.",bn:"Complex-এ পরিবর্তন করো।"},ans:["He hoped that he would win the prize."],exp:{en:"to-inf → that-clause",bn:"Noun Clause।"}},
-{id:"sc9",topic:"Simple ↔ Complex",q:{en:"He is so weak that he cannot walk.",bn:"সে এত দুর্বল যে হাঁটতে পারে না।"},ins:{en:"Change into Simple.",bn:"Simple-এ পরিবর্তন করো।"},ans:["He is too weak to walk."],exp:{en:"so…that…cannot → too…to",bn:"Complex থেকে Simple।"}},
-{id:"sc10",topic:"Simple ↔ Complex",q:{en:"Though he is poor, he is honest.",bn:"দরিদ্র হলেও সে সৎ।"},ins:{en:"Change into Simple.",bn:"Simple-এ পরিবর্তন করো।"},ans:["In spite of his poverty he is honest.","Despite his poverty he is honest."],exp:{en:"Though → In spite of + N",bn:"Complex থেকে Simple।"}},
-{id:"sc11",topic:"Simple ↔ Complex",q:{en:"I am sure of passing.",bn:"আমি পাস করার ব্যাপারে নিশ্চিত।"},ins:{en:"Change into Complex.",bn:"Complex-এ পরিবর্তন করো।"},ans:["I am sure that I shall pass."],exp:{en:"of + gerund → that-clause",bn:"Noun Clause।"}},
-{id:"sc12",topic:"Simple ↔ Complex",q:{en:"His silence proves his guilt.",bn:"তার নীরবতা তার অপরাধ প্রমাণ করে।"},ins:{en:"Change into Complex.",bn:"Complex-এ পরিবর্তন করো।"},ans:["His silence proves that he is guilty.","The fact that he is silent proves his guilt."],exp:{en:"Noun → that-clause",bn:"Noun Clause।"}},
-
-/* Simple ↔ Compound */
-{id:"co1",topic:"Simple ↔ Compound",q:{en:"In spite of his poverty, he was happy.",bn:"দারিদ্র্য সত্ত্বেও সে সুখী ছিল।"},ins:{en:"Change into Compound.",bn:"Compound-এ পরিবর্তন করো।"},ans:["He was poor, yet he was happy.","He was poor, but he was happy."],exp:{en:"In spite of → yet/but",bn:"Compound।"}},
-{id:"co2",topic:"Simple ↔ Compound",q:{en:"Having done his work, he left the place.",bn:"কাজ শেষ করে সে জায়গা ছেড়ে চলে গেল।"},ins:{en:"Change into Compound.",bn:"Compound-এ পরিবর্তন করো।"},ans:["He did his work and then left the place.","He finished his work and left the place."],exp:{en:"Having + PP → and",bn:"Compound।"}},
-{id:"co3",topic:"Simple ↔ Compound",q:{en:"Besides caning the boy he also fined him.",bn:"ছেলেটিকে বেত মারার পাশাপাশি জরিমানাও করল।"},ins:{en:"Change into Compound.",bn:"Compound-এ পরিবর্তন করো।"},ans:["He not only caned the boy but also fined him.","He caned the boy and also fined him."],exp:{en:"Besides → not only…but also",bn:"Compound।"}},
-{id:"co4",topic:"Simple ↔ Compound",q:{en:"You must work hard to succeed.",bn:"সফল হতে হলে তোমাকে কঠোর পরিশ্রম করতে হবে।"},ins:{en:"Change into Compound.",bn:"Compound-এ পরিবর্তন করো।"},ans:["You must work hard, or you will fail.","Work hard, or you will not succeed."],exp:{en:"to-inf of purpose → or",bn:"Compound।"}},
-{id:"co5",topic:"Simple ↔ Compound",q:{en:"He could not come on account of illness.",bn:"অসুস্থতার কারণে সে আসতে পারেনি।"},ins:{en:"Change into Compound.",bn:"Compound-এ পরিবর্তন করো।"},ans:["He was ill, and so he could not come.","He was ill; therefore he could not come."],exp:{en:"on account of → and so / therefore",bn:"Compound।"}},
-{id:"co6",topic:"Simple ↔ Compound",q:{en:"Though he is rich he is miserly.",bn:"ধনী হলেও সে কৃপণ।"},ins:{en:"Change into Compound.",bn:"Compound-এ পরিবর্তন করো।"},ans:["He is rich, yet he is miserly.","He is rich, but he is miserly."],exp:{en:"Though → yet/but",bn:"Complex থেকে Compound।"}},
-{id:"co7",topic:"Simple ↔ Compound",q:{en:"If you try you will succeed.",bn:"চেষ্টা করলে তুমি সফল হবে।"},ins:{en:"Change into Compound.",bn:"Compound-এ পরিবর্তন করো।"},ans:["Try, and you will succeed."],exp:{en:"If → and (imperative)",bn:"Complex থেকে Compound।"}},
-{id:"co8",topic:"Simple ↔ Compound",q:{en:"Unless you speak I shall fire.",bn:"তুমি না বললে আমি গুলি করব।"},ins:{en:"Change into Compound.",bn:"Compound-এ পরিবর্তন করো।"},ans:["Speak, or I shall fire."],exp:{en:"Unless → or",bn:"Complex থেকে Compound।"}},
-
-/* Parts of Speech */
-{id:"p1",topic:"Parts of Speech",q:{en:"He acted prudently.",bn:"সে বিচক্ষণতার সাথে কাজ করেছিল।"},ins:{en:"Replace the adverb by a Noun.",bn:"Adverb-কে Noun দিয়ে প্রতিস্থাপন করো।"},ans:["He acted with prudence."],exp:{en:"prudently → with prudence",bn:"Adverb → Noun।"}},
-{id:"p2",topic:"Parts of Speech",q:{en:"He treated me with scorn.",bn:"সে আমাকে অবজ্ঞার সাথে ব্যবহার করেছিল।"},ins:{en:"Replace by an Adverb.",bn:"Adverb দিয়ে প্রতিস্থাপন করো।"},ans:["He treated me scornfully."],exp:{en:"with scorn → scornfully",bn:"Noun phrase → Adverb।"}},
-{id:"p3",topic:"Parts of Speech",q:{en:"He gave a prompt answer.",bn:"সে তাড়াতাড়ি উত্তর দিয়েছিল।"},ins:{en:"Use a Verb for the italicised idea.",bn:"Verb ব্যবহার করো।"},ans:["He answered promptly."],exp:{en:"gave a prompt answer → answered promptly",bn:"Noun → Verb।"}},
-{id:"p4",topic:"Parts of Speech",q:{en:"He is strong enough to do it.",bn:"সে এটা করার মতো যথেষ্ট শক্তিশালী।"},ins:{en:"Use a Noun for 'strong'.",bn:"'strong'-এর জন্য Noun ব্যবহার করো।"},ans:["He has the strength to do it."],exp:{en:"strong → strength",bn:"Adjective → Noun।"}},
-{id:"p5",topic:"Parts of Speech",q:{en:"It is unfortunate that he failed.",bn:"দুর্ভাগ্যবশত সে ব্যর্থ হয়েছিল।"},ins:{en:"Use an Adverb.",bn:"Adverb ব্যবহার করো।"},ans:["Unfortunately he failed."],exp:{en:"It is unfortunate that → Unfortunately",bn:"Adjective → Adverb।"}},
-
-/* Miscellaneous */
-{id:"m1",topic:"Miscellaneous",q:{en:"As soon as he came, he made objections.",bn:"সে আসামাত্রই আপত্তি তুলল।"},ins:{en:"Use No sooner…than.",bn:"No sooner…than ব্যবহার করো।"},ans:["No sooner did he come than he made objections."],exp:{en:"As soon as → No sooner…than",bn:"Misc।"}},
-{id:"m2",topic:"Miscellaneous",q:{en:"Unless you work hard you cannot succeed.",bn:"কঠোর পরিশ্রম না করলে তুমি সফল হতে পারবে না।"},ins:{en:"Use If…not.",bn:"If…not ব্যবহার করো।"},ans:["If you do not work hard you cannot succeed."],exp:{en:"Unless → If…not",bn:"Misc।"}},
-{id:"m3",topic:"Miscellaneous",q:{en:"He is sure that he will get a pass.",bn:"সে নিশ্চিত যে সে পাস করবে।"},ins:{en:"Change into Simple.",bn:"Simple-এ পরিবর্তন করো।"},ans:["He is sure of getting a pass.","He is sure of a pass."],exp:{en:"that-clause → of + gerund/noun",bn:"Complex থেকে Simple।"}},
-{id:"m4",topic:"Miscellaneous",q:{en:"Everyone would admit that he is honest.",bn:"সবাই স্বীকার করবে যে সে সৎ।"},ins:{en:"Make it Negative.",bn:"Negative করো।"},ans:["No one would deny that he is honest."],exp:{en:"Everyone admit → No one deny",bn:"Misc।"}},
-{id:"m5",topic:"Miscellaneous",q:{en:"I never did this before.",bn:"আমি আগে কখনো এটা করিনি।"},ins:{en:"Make it Complex and Affirmative.",bn:"Complex ও Affirmative করো।"},ans:["This is the first time that I have done this.","It is the first time that I have done this."],exp:{en:"never … before → the first time that",bn:"Misc।"}},
-{id:"m6",topic:"Miscellaneous",q:{en:"I would die sooner than injure you.",bn:"তোমাকে আহত করার চেয়ে আমি মরতে রাজি।"},ins:{en:"Use the Positive degree.",bn:"Positive degree ব্যবহার করো।"},ans:["I would as soon die as injure you."],exp:{en:"sooner than → as soon … as",bn:"Degree।"}},
-{id:"m7",topic:"Miscellaneous",q:{en:"It always pours when it rains.",bn:"বৃষ্টি হলেই বন্যা হয়।"},ins:{en:"Turn into Negative form.",bn:"Negative করো।"},ans:["It never rains but it pours."],exp:{en:"always … when → never … but",bn:"Proverbial।"}},
-{id:"m8",topic:"Miscellaneous",q:{en:"Oh Death, where is thy sting?",bn:"হে মৃত্যু, তোমার হুল কোথায়?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["Oh Death, thou hast no sting.","Death has no sting."],exp:{en:"where is → has no",bn:"Rhetorical।"}},
-{id:"m9",topic:"Miscellaneous",q:{en:"This is too small a thing to put down.",bn:"এটা লেখার মতো খুব ছোট বিষয়।"},ins:{en:"Omit 'too'.",bn:"'too' বাদ দাও।"},ans:["This is so small a thing that it cannot be put down."],exp:{en:"too…to → so…that…cannot",bn:"too…to।"}},
-{id:"m10",topic:"Miscellaneous",q:{en:"They proposed to hold a meeting.",bn:"তারা মিটিং করার প্রস্তাব দিয়েছিল।"},ins:{en:"Change the Voice.",bn:"Voice পরিবর্তন করো।"},ans:["It was proposed to hold a meeting.","A meeting was proposed to be held."],exp:{en:"Active → Passive",bn:"Voice।"}},
-{id:"m11",topic:"Miscellaneous",q:{en:"He had to call a meeting.",bn:"তাকে মিটিং ডাকতে হয়েছিল।"},ins:{en:"Make it Negative without changing meaning.",bn:"অর্থ না বদলে Negative করো।"},ans:["He could not help calling a meeting.","He could not but call a meeting."],exp:{en:"had to → could not help / could not but",bn:"Misc।"}},
-{id:"m12",topic:"Miscellaneous",q:{en:"Why waste time in reading trash?",bn:"আজেবাজে জিনিস পড়ে সময় নষ্ট করছ কেন?"},ins:{en:"Change into Assertive and Imperative.",bn:"Assertive ও Imperative-এ পরিবর্তন করো।"},ans:["It is no use wasting time in reading trash.","Do not waste time in reading trash."],exp:{en:"Why + V → It is no use / Do not",bn:"Interrogative।"}},
-{id:"m13",topic:"Miscellaneous",q:{en:"He leaped into the water as soon as the ship touched the shore.",bn:"জাহাজ তীরে লাগামাত্রই সে জলে ঝাঁপ দিল।"},ins:{en:"Begin with No sooner.",bn:"No sooner দিয়ে শুরু করো।"},ans:["No sooner had the ship touched the shore than he leaped into the water."],exp:{en:"as soon as → No sooner…than",bn:"Misc।"}},
-{id:"m14",topic:"Miscellaneous",q:{en:"One cannot gather grapes from thistles.",bn:"কাঁটাঝোপ থেকে আঙুর পাওয়া যায় না।"},ins:{en:"Change into Passive.",bn:"Passive-এ পরিবর্তন করো।"},ans:["Grapes cannot be gathered from thistles."],exp:{en:"Active → Passive",bn:"Voice।"}},
-{id:"m15",topic:"Miscellaneous",q:{en:"I have never seen so beautiful a pearl as this.",bn:"এর মতো এত সুন্দর মুক্তা আমি কখনো দেখিনি।"},ins:{en:"Use the Comparative degree.",bn:"Comparative degree ব্যবহার করো।"},ans:["This pearl is more beautiful than any other pearl I have ever seen."],exp:{en:"never seen so … as → more … than any other",bn:"Degree।"}},
-{id:"m16",topic:"Miscellaneous",q:{en:"He is not only intelligent but also laborious.",bn:"সে শুধু বুদ্ধিমানই নয়, পরিশ্রমীও।"},ins:{en:"Change into Simple.",bn:"Simple-এ পরিবর্তন করো।"},ans:["Besides being intelligent, he is laborious also.","He is both intelligent and laborious."],exp:{en:"not only…but also → Besides / both…and",bn:"Compound থেকে Simple।"}},
-{id:"m17",topic:"Miscellaneous",q:{en:"Who does not know that two and two makes four?",bn:"দুই আর দুইয়ে চার হয় তা কে জানে না?"},ins:{en:"Change into Assertive.",bn:"Assertive-এ পরিবর্তন করো।"},ans:["Everybody knows that two and two makes four."],exp:{en:"Who does not know → Everybody knows",bn:"Rhetorical।"}},
-{id:"m18",topic:"Miscellaneous",q:{en:"There is no doubt that he is honest.",bn:"তাতে সন্দেহ নেই যে সে সৎ।"},ins:{en:"Use the noun form of honest as subject.",bn:"honest-এর Noun form subject হিসেবে ব্যবহার করো।"},ans:["His honesty is beyond doubt.","His honesty cannot be doubted."],exp:{en:"There is no doubt that he is Adj → His N is beyond doubt",bn:"Noun form।"}},
-{id:"m19",topic:"Miscellaneous",q:{en:"When the sun rose the fog disappeared.",bn:"সূর্য ওঠার সাথে সাথে কুয়াশা উধাও হয়ে গেল।"},ins:{en:"Use Nominative Absolute.",bn:"Nominative Absolute ব্যবহার করো।"},ans:["The sun having risen, the fog disappeared."],exp:{en:"When + clause → Absolute phrase",bn:"Absolute।"}},
-{id:"m20",topic:"Miscellaneous",q:{en:"Calcutta is one of the biggest cities in India.",bn:"কলকাতা ভারতের অন্যতম বৃহত্তম শহর।"},ins:{en:"Change into Positive degree.",bn:"Positive degree-এ পরিবর্তন করো।"},ans:["Very few cities in India are so big as Calcutta."],exp:{en:"one of the biggest → Very few … so … as",bn:"Degree।"}},
-{id:"m21",topic:"Miscellaneous",q:{en:"He is blind to his own faults.",bn:"সে নিজের দোষ দেখতে পায় না।"},ins:{en:"(Supply correct preposition – already given) Explain the idiom or transform if needed.",bn:"অর্থ বুঝিয়ে দাও।"},ans:["He cannot see his own faults.","He is unaware of his own faults."],exp:{en:"blind to = cannot see / unaware of",bn:"Idiom।"}},
-{id:"m22",topic:"Miscellaneous",q:{en:"God is present everywhere.",bn:"ঈশ্বর সর্বত্র বিরাজমান।"},ins:{en:"Substitute a single word for 'present everywhere'.",bn:"একটি শব্দে লেখো।"},ans:["God is omnipresent."],exp:{en:"present everywhere → omnipresent",bn:"One-word substitution।"}},
-{id:"m23",topic:"Miscellaneous",q:{en:"If you do not work hard, you cannot succeed.",bn:"কঠোর পরিশ্রম না করলে সফল হতে পারবে না।"},ins:{en:"Use 'unless'.",bn:"'unless' ব্যবহার করো।"},ans:["Unless you work hard, you cannot succeed."],exp:{en:"If…not → Unless",bn:"Misc।"}},
-{id:"m24",topic:"Miscellaneous",q:{en:"The fact is so evident that it requires no proof.",bn:"তথ্যটি এত স্পষ্ট যে প্রমাণের প্রয়োজন নেই।"},ins:{en:"Replace 'so' by 'too'.",bn:"'so'-এর বদলে 'too' ব্যবহার করো।"},ans:["The fact is too evident to require any proof."],exp:{en:"so…that…no → too…to",bn:"too…to।"}},
-{id:"m25",topic:"Miscellaneous",q:{en:"Einstein was the greatest scientist of our century.",bn:"আইনস্টাইন আমাদের শতাব্দীর সর্বশ্রেষ্ঠ বিজ্ঞানী।"},ins:{en:"Use the Comparative degree.",bn:"Comparative degree ব্যবহার করো।"},ans:["Einstein was greater than any other scientist of our century.","Einstein was greater than all other scientists of our century."],exp:{en:"the greatest → greater than any other",bn:"Degree।"}}
-];
-
-/* ========== APP LOGIC ========== */
-const S={lang:"en",theme:"light",q:[],i:0,cur:null,prog:JSON.parse(localStorage.getItem("tm2")||'{"a":0,"c":0,"t":{}}')};
-
-function norm(s){return s.toLowerCase().replace(/[^\w\s]/g,"").replace(/\s+/g," ").trim()}
-function ok(u,acc){const n=norm(u);return acc.some(a=>{const x=norm(a);return x===n||x.includes(n)||n.includes(x)})}
-function save(){localStorage.setItem("tm2",JSON.stringify(S.prog));upd()}
-function upd(){const{a,c}=S.prog,p=a?Math.round(c/a*100):0;
-["sA","pA"].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=a});
-["sC","pC"].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=c});
-["sP","pP"].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=p+"%"})}
-
-function go(v){
-document.querySelectorAll(".view").forEach(x=>x.classList.remove("on"));
-document.getElementById("v-"+v).classList.add("on");
-document.querySelectorAll(".ni").forEach(n=>n.classList.toggle("on",n.dataset.v===v));
-if(v==="rules")renderRules();
-if(v==="practice")startP();
-if(v==="bank")renderBank();
-if(v==="progress")renderTS();
-}
-
+const S={lang:"en",theme:"light",mode:"click",q:[],i:0,cur:null,sel:null,prog:JSON.parse(localStorage.getItem("tm4")||'{"a":0,"c":0,"t":{}}')};
+function norm(s){return (s||"").toLowerCase().replace(/[^\w\s]/g,"").replace(/\s+/g," ").trim()}
+function isOk(u,acc){const n=norm(u);return acc.some(a=>{const x=norm(a);return x===n||x.includes(n)||n.includes(x)})}
+function save(){localStorage.setItem("tm4",JSON.stringify(S.prog));upd()}
+function upd(){const{a,c}=S.prog,p=a?Math.round(c/a*100):0;["sA","pA"].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=a});["sC","pC"].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=c});["sP","pP"].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=p+"%"})}
+function go(v){document.querySelectorAll(".view").forEach(x=>x.classList.remove("on"));document.getElementById("v-"+v).classList.add("on");document.querySelectorAll(".ni").forEach(n=>n.classList.toggle("on",n.dataset.v===v));if(v==="rules")renderRules();if(v==="practice")startP();if(v==="bank")renderBank();if(v==="progress")renderTS()}
 function setL(l){S.lang=l;document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===l));if(S.cur)rq(S.cur)}
-function togTh(){S.theme=S.theme==="light"?"dark":"light";document.documentElement.setAttribute("data-theme",S.theme==="dark"?"dark":"");document.getElementById("thm").textContent=S.theme==="dark"?"☀️":"🌙";localStorage.setItem("tm2th",S.theme)}
-
-function renderRules(){
-const box=document.getElementById("rulesBox");
-box.innerHTML=RULES.map(r=>`
-<div class="box" style="margin-bottom:1rem">
-<h3 style="margin-bottom:.4rem">${S.lang==="bn"?r.titleBn:r.title}</h3>
-<div class="rb"><strong>Rule:</strong> ${S.lang!=="bn"?r.rule.en:""}${S.lang!=="en"?`<div class="bn" style="margin-top:.3rem">${r.rule.bn}</div>`:""}</div>
-<ul class="rule-list">${r.formulas.map(f=>`<li><code>${f}</code></li>`).join("")}</ul>
-${r.examples.map(e=>`<div class="ec"><div class="lb">Example</div><div><b>Original:</b> ${e.o}</div><div style="margin-top:.25rem"><b>Transformed:</b> ${e.t}</div></div>`).join("")}
-</div>`).join("");
-}
-
-function startP(f="all"){
-S.q=f==="all"?[...Q]:Q.filter(x=>x.topic===f);
-S.q.sort(()=>Math.random()-.5);S.i=0;loadQ();
-}
-function loadQ(){
-if(!S.q.length){document.getElementById("qT").textContent="No questions in this filter.";return}
-if(S.i>=S.q.length)S.i=0;
-S.cur=S.q[S.i];rq(S.cur);
-document.getElementById("ans").value="";
-document.getElementById("fb").className="fb";
-}
-function rq(q){
-const t=document.getElementById("qT"),b=document.getElementById("qB"),i=document.getElementById("qI");
-if(S.lang==="bn"){t.textContent=q.q.bn||q.q.en;b.textContent=""}
-else if(S.lang==="both"){t.textContent=q.q.en;b.textContent=q.q.bn||""}
-else{t.textContent=q.q.en;b.textContent=""}
-i.textContent=S.lang==="bn"?(q.ins.bn||q.ins.en):q.ins.en;
-}
-function check(){
-const u=document.getElementById("ans").value.trim();if(!u){alert("Type your answer first.");return}
-const q=S.cur,c=ok(u,q.ans);
-S.prog.a++;if(c)S.prog.c++;
-if(!S.prog.t[q.topic])S.prog.t[q.topic]={a:0,c:0};
-S.prog.t[q.topic].a++;if(c)S.prog.t[q.topic].c++;
-save();
-const fb=document.getElementById("fb");
-fb.className="fb show "+(c?"ok":"no");
-fb.innerHTML=c
-?`✅ <b>Correct!</b><br>${S.lang!=="bn"?q.exp.en:""}${S.lang!=="en"?`<div class="bn" style="margin-top:.3rem">${q.exp.bn}</div>`:""}`
-:`❌ <b>Not matching the model answer.</b><br><em>Accepted:</em><br>${q.ans.map(a=>"• "+a).join("<br>")}<div style="margin-top:.4rem">${S.lang!=="bn"?q.exp.en:""}${S.lang!=="en"?`<div class="bn">${q.exp.bn}</div>`:""}</div>`;
-}
-function showA(){
-const q=S.cur,fb=document.getElementById("fb");
-fb.className="fb show";
-fb.innerHTML=`<b>Model Answer(s):</b><br>${q.ans.map(a=>"• "+a).join("<br>")}<div style="margin-top:.4rem;font-size:.9rem">${q.exp.en}<br><span class="bn">${q.exp.bn}</span></div>`;
-}
+function togTh(){S.theme=S.theme==="light"?"dark":"light";document.documentElement.setAttribute("data-theme",S.theme==="dark"?"dark":"");document.getElementById("thm").textContent=S.theme==="dark"?"☀️":"🌙";localStorage.setItem("tm4th",S.theme)}
+function renderRules(){const box=document.getElementById("rulesBox");box.innerHTML=RULES.map(r=>`<div class="box"><h3 style="margin-bottom:.35rem">${S.lang==="bn"?r.titleBn:r.title}</h3><div class="rb"><strong>Rule:</strong> ${S.lang!=="bn"?r.rule.en:""}${S.lang!=="en"?`<div class="bn" style="margin-top:.3rem">${r.rule.bn}</div>`:""}</div><div class="detail">${S.lang!=="bn"?r.detail.en:""}${S.lang!=="en"?`<div class="bn">${r.detail.bn}</div>`:""}</div><ul class="rule-list">${r.formulas.map(f=>`<li><code>${f}</code></li>`).join("")}</ul>${r.examples.map(e=>`<div class="ec"><div class="lb">Example</div><div><b>Original:</b> ${e.o}</div><div style="margin-top:.2rem"><b>Transformed:</b> ${e.t}</div></div>`).join("")}</div>`).join("")}
+function startP(f="all"){S.q=f==="all"?[...Q]:Q.filter(x=>x.topic===f);S.q.sort(()=>Math.random()-.5);S.i=0;S.sel=null;loadQ()}
+function loadQ(){if(!S.q.length){document.getElementById("qT").textContent="No questions.";return}if(S.i>=S.q.length)S.i=0;S.cur=S.q[S.i];S.sel=null;rq(S.cur);document.getElementById("ans").value="";document.getElementById("fb").className="fb";document.getElementById("qMeta").textContent=`Q ${S.i+1}/${S.q.length} • ${S.cur.topic}`}
+function rq(q){const t=document.getElementById("qT"),b=document.getElementById("qB"),i=document.getElementById("qI");if(S.lang==="bn"){t.textContent=q.q.bn||q.q.en;b.textContent=""}else if(S.lang==="both"){t.textContent=q.q.en;b.textContent=q.q.bn||""}else{t.textContent=q.q.en;b.textContent=""}i.textContent=S.lang==="bn"?(q.ins.bn||q.ins.en):q.ins.en;const optsEl=document.getElementById("opts"),ansEl=document.getElementById("ans");if(S.mode==="click"&&q.opts&&q.opts.length){optsEl.style.display="flex";ansEl.style.display="none";const letters=["A","B","C","D"];const shuffled=[...q.opts].sort(()=>Math.random()-.5);optsEl.innerHTML=shuffled.map((o,idx)=>`<button type="button" class="opt" data-val="${String(o).replace(/"/g,"&quot;")}"><span class="letter">${letters[idx]}.</span><span>${o}</span></button>`).join("");optsEl.querySelectorAll(".opt").forEach(btn=>{btn.addEventListener("click",()=>{optsEl.querySelectorAll(".opt").forEach(x=>x.classList.remove("sel"));btn.classList.add("sel");S.sel=btn.dataset.val})})}else{optsEl.style.display="none";ansEl.style.display="block"}}
+function check(){const q=S.cur;let user="";if(S.mode==="click"&&q.opts){if(!S.sel){alert("Please select an option first.");return}user=S.sel}else{user=document.getElementById("ans").value.trim();if(!user){alert("Type your answer first.");return}}const c=isOk(user,q.ans);S.prog.a++;if(c)S.prog.c++;if(!S.prog.t[q.topic])S.prog.t[q.topic]={a:0,c:0};S.prog.t[q.topic].a++;if(c)S.prog.t[q.topic].c++;save();if(S.mode==="click"&&q.opts){document.querySelectorAll("#opts .opt").forEach(btn=>{const v=btn.dataset.val;if(isOk(v,q.ans))btn.classList.add("correct");else if(btn.classList.contains("sel"))btn.classList.add("wrong")})}const fb=document.getElementById("fb");fb.className="fb show "+(c?"ok":"no");fb.innerHTML=c?`✅ <b>Correct!</b><br>${S.lang!=="bn"?q.exp.en:""}${S.lang!=="en"?`<div class="bn" style="margin-top:.3rem">${q.exp.bn}</div>`:""}`:`❌ <b>Not matching.</b><br><em>Accepted:</em><br>${q.ans.map(a=>"• "+a).join("<br>")}<div style="margin-top:.4rem">${S.lang!=="bn"?q.exp.en:""}${S.lang!=="en"?`<div class="bn">${q.exp.bn}</div>`:""}</div>`}
+function showA(){const q=S.cur,fb=document.getElementById("fb");fb.className="fb show";fb.innerHTML=`<b>Model Answer(s):</b><br>${q.ans.map(a=>"• "+a).join("<br>")}<div style="margin-top:.4rem;font-size:.88rem">${q.exp.en}<br><span class="bn">${q.exp.bn}</span></div>`;if(S.mode==="click"&&q.opts){document.querySelectorAll("#opts .opt").forEach(btn=>{if(isOk(btn.dataset.val,q.ans))btn.classList.add("correct")})}}
 function nextQ(){S.i++;loadQ()}
+function renderBank(f="all"){const list=document.getElementById("bankList");const items=f==="all"?Q:Q.filter(x=>x.topic===f);list.innerHTML=items.map((q,i)=>`<div class="lc"><h4>${i+1}. ${q.q.en}</h4><div class="meta">${q.topic}</div><div style="font-size:.8rem;color:var(--m);margin-top:.25rem"><b>Instruction:</b> ${q.ins.en}</div></div>`).join("")}
+function renderTS(){const box=document.getElementById("tStats"),t=S.prog.t;if(!Object.keys(t).length){box.innerHTML='<p style="color:var(--m)">No data yet. Start practising!</p>';return}box.innerHTML=Object.entries(t).map(([k,v])=>{const p=v.a?Math.round(v.c/v.a*100):0;return`<div style="margin-bottom:.75rem"><div style="display:flex;justify-content:space-between;font-size:.86rem"><span>${k}</span><span>${v.c}/${v.a} (${p}%)</span></div><div class="pb"><div class="pf" style="width:${p}%"></div></div></div>`}).join("")}
+document.addEventListener("DOMContentLoaded",()=>{if(localStorage.getItem("tm4th")==="dark"){S.theme="dark";document.documentElement.setAttribute("data-theme","dark");document.getElementById("thm").textContent="☀️"}upd();document.querySelectorAll(".dc").forEach(c=>c.addEventListener("click",()=>go(c.dataset.v)));document.querySelectorAll(".ni").forEach(n=>n.addEventListener("click",()=>go(n.dataset.v)));document.querySelectorAll(".back").forEach(b=>b.addEventListener("click",()=>go(b.dataset.b)));document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setL(b.dataset.l)));document.getElementById("thm").addEventListener("click",togTh);document.getElementById("chk").addEventListener("click",check);document.getElementById("next").addEventListener("click",nextQ);document.getElementById("show").addEventListener("click",showA);document.getElementById("hint").addEventListener("click",()=>alert("Hint: "+(S.cur?.exp?.en||"Think of the structure.")));document.getElementById("ans").addEventListener("keydown",e=>{if(e.key==="Enter")check()});document.getElementById("modeClick").addEventListener("click",()=>{S.mode="click";document.getElementById("modeClick").classList.add("on");document.getElementById("modeType").classList.remove("on");if(S.cur)rq(S.cur)});document.getElementById("modeType").addEventListener("click",()=>{S.mode="type";document.getElementById("modeType").classList.add("on");document.getElementById("modeClick").classList.remove("on");if(S.cur)rq(S.cur)});document.querySelectorAll("#pFilters .chip").forEach(c=>c.addEventListener("click",()=>{document.querySelectorAll("#pFilters .chip").forEach(x=>x.classList.remove("on"));c.classList.add("on");startP(c.dataset.f)}));document.querySelectorAll("[data-n]").forEach(b=>b.addEventListener("click",()=>{startP("all");S.q=S.q.slice(0,+b.dataset.n);S.i=0;loadQ();go("practice")}));document.getElementById("rst").addEventListener("click",()=>{if(confirm("Reset all progress?")){S.prog={a:0,c:0,t:{}};save();renderTS()}});const topics=[...new Set(Q.map(q=>q.topic))];document.getElementById("topChips").innerHTML=topics.map(t=>`<button class="chip" data-t="${t}">${t}</button>`).join("");document.querySelectorAll("#topChips .chip").forEach(c=>c.addEventListener("click",()=>{go("practice");startP(c.dataset.t)}));document.getElementById("bFilters").innerHTML=`<button class="chip on" data-f="all">All (${Q.length})</button>`+topics.map(t=>`<button class="chip" data-f="${t}">${t}</button>`).join("");document.querySelectorAll("#bFilters .chip").forEach(c=>c.addEventListener("click",()=>{document.querySelectorAll("#bFilters .chip").forEach(x=>x.classList.remove("on"));c.classList.add("on");renderBank(c.dataset.f)}))});
 
-function renderBank(f="all"){
-const list=document.getElementById("bankList");
-const items=f==="all"?Q:Q.filter(x=>x.topic===f);
-list.innerHTML=items.map((q,i)=>`
-<div class="lc">
-<h4>${i+1}. ${q.q.en}</h4>
-<div class="meta">${q.topic}</div>
-<div style="font-size:.82rem;color:var(--m);margin-top:.3rem"><b>Instruction:</b> ${q.ins.en}</div>
-</div>`).join("");
-}
-
-function renderTS(){
-const box=document.getElementById("tStats"),t=S.prog.t;
-if(!Object.keys(t).length){box.innerHTML='<p style="color:var(--m)">No data yet. Start practising!</p>';return}
-box.innerHTML=Object.entries(t).map(([k,v])=>{
-const p=v.a?Math.round(v.c/v.a*100):0;
-return`<div style="margin-bottom:.8rem"><div style="display:flex;justify-content:space-between;font-size:.88rem"><span>${k}</span><span>${v.c}/${v.a} (${p}%)</span></div><div class="pb"><div class="pf" style="width:${p}%"></div></div></div>`;
-}).join("");
-}
-
-document.addEventListener("DOMContentLoaded",()=>{
-if(localStorage.getItem("tm2th")==="dark"){S.theme="dark";document.documentElement.setAttribute("data-theme","dark");document.getElementById("thm").textContent="☀️"}
-upd();
-document.querySelectorAll(".dc").forEach(c=>c.addEventListener("click",()=>go(c.dataset.v)));
-document.querySelectorAll(".ni").forEach(n=>n.addEventListener("click",()=>go(n.dataset.v)));
-document.querySelectorAll(".back").forEach(b=>b.addEventListener("click",()=>go(b.dataset.b)));
-document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setL(b.dataset.l)));
-document.getElementById("thm").addEventListener("click",togTh);
-document.getElementById("chk").addEventListener("click",check);
-document.getElementById("next").addEventListener("click",nextQ);
-document.getElementById("show").addEventListener("click",showA);
-document.getElementById("hint").addEventListener("click",()=>alert("Hint: "+(S.cur.exp.en||"Think of the required structure.")));
-document.getElementById("ans").addEventListener("keydown",e=>{if(e.key==="Enter")check()});
-document.querySelectorAll("#pFilters .chip").forEach(c=>c.addEventListener("click",()=>{
-document.querySelectorAll("#pFilters .chip").forEach(x=>x.classList.remove("on"));c.classList.add("on");startP(c.dataset.f)}));
-document.querySelectorAll("[data-n]").forEach(b=>b.addEventListener("click",()=>{
-startP("all");S.q=S.q.slice(0,+b.dataset.n);S.i=0;loadQ();go("practice")}));
-document.getElementById("rst").addEventListener("click",()=>{if(confirm("Reset all progress?")){S.prog={a:0,c:0,t:{}};save();renderTS()}});
-
-const topics=[...new Set(Q.map(q=>q.topic))];
-document.getElementById("topChips").innerHTML=topics.map(t=>`<button class="chip" data-t="${t}">${t}</button>`).join("");
-document.querySelectorAll("#topChips .chip").forEach(c=>c.addEventListener("click",()=>{go("practice");startP(c.dataset.t)}));
-document.getElementById("bFilters").innerHTML=`<button class="chip on" data-f="all">All (${Q.length})</button>`+topics.map(t=>`<button class="chip" data-f="${t}">${t}</button>`).join("");
-document.querySelectorAll("#bFilters .chip").forEach(c=>c.addEventListener("click",()=>{
-document.querySelectorAll("#bFilters .chip").forEach(x=>x.classList.remove("on"));c.classList.add("on");renderBank(c.dataset.f)}));
-});
 </script>
 </body>
 </html>
